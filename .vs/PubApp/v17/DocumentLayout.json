@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.api\\common\\interfaces\\icommoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|solutionrelative:ads.api\\common\\interfaces\\icommoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.api\\controllers\\promotioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|solutionrelative:ads.api\\controllers\\promotioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|solutionrelative:ads.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|solutionrelative:ads.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.api\\controllers\\campaigncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|solutionrelative:ads.api\\controllers\\campaigncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.api\\controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|solutionrelative:ads.api\\controllers\\budgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.api\\controllers\\adcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19A6C077-4C85-429D-B73F-0C311F3C14BD}|Ads.Api\\Ads.Api.csproj|solutionrelative:ads.api\\controllers\\adcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 420,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ICommonController.cs",
+              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Common\\Interfaces\\ICommonController.cs",
+              "RelativeDocumentMoniker": "Ads.Api\\Common\\Interfaces\\ICommonController.cs",
+              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Common\\Interfaces\\ICommonController.cs",
+              "RelativeToolTip": "Ads.Api\\Common\\Interfaces\\ICommonController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:57:48.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PromotionController.cs",
+              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Controllers\\PromotionController.cs",
+              "RelativeDocumentMoniker": "Ads.Api\\Controllers\\PromotionController.cs",
+              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Controllers\\PromotionController.cs",
+              "RelativeToolTip": "Ads.Api\\Controllers\\PromotionController.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAADwv04AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:56:57.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Ads.Api\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Ads.Api\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAADwv0wAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:56:47.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Ads.Api\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Ads.Api\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAADwv04AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:56:38.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CampaignController.cs",
+              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Controllers\\CampaignController.cs",
+              "RelativeDocumentMoniker": "Ads.Api\\Controllers\\CampaignController.cs",
+              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Controllers\\CampaignController.cs",
+              "RelativeToolTip": "Ads.Api\\Controllers\\CampaignController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAADwv08AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:56:28.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BudgetController.cs",
+              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Controllers\\BudgetController.cs",
+              "RelativeDocumentMoniker": "Ads.Api\\Controllers\\BudgetController.cs",
+              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Controllers\\BudgetController.cs",
+              "RelativeToolTip": "Ads.Api\\Controllers\\BudgetController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAADwv08AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:56:15.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdController.cs",
+              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Controllers\\AdController.cs",
+              "RelativeDocumentMoniker": "Ads.Api\\Controllers\\AdController.cs",
+              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\Controllers\\AdController.cs",
+              "RelativeToolTip": "Ads.Api\\Controllers\\AdController.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAAAEwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T15:55:57.809Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

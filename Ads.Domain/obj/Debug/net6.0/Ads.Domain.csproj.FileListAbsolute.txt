@@ -1,0 +1,12 @@
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\bin\Debug\net6.0\Ads.Domain.deps.json
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\bin\Debug\net6.0\Ads.Domain.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\bin\Debug\net6.0\Ads.Domain.pdb
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\obj\Debug\net6.0\Ads.Domain.csproj.AssemblyReference.cache
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\obj\Debug\net6.0\Ads.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\obj\Debug\net6.0\Ads.Domain.AssemblyInfoInputs.cache
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\obj\Debug\net6.0\Ads.Domain.AssemblyInfo.cs
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\obj\Debug\net6.0\Ads.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\obj\Debug\net6.0\Ads.Domain.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\obj\Debug\net6.0\refint\Ads.Domain.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\obj\Debug\net6.0\Ads.Domain.pdb
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\obj\Debug\net6.0\ref\Ads.Domain.dll

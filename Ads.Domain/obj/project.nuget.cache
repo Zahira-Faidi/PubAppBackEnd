@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UgSawz+p6BhgRj1/Yi30mev7FY/IACuiWBfb66yQ4PAkDzsFs9iqafcEX1xkRRHcZbWsWanMJy53khvJB4A9WQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\Ads.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\mongodb.bson\\2.24.0\\mongodb.bson.2.24.0.nupkg.sha512",
+    "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
