@@ -7,11 +7,11 @@ namespace Ads.Application.Budgets.Commands.CreateBudgetCommand
 {
     public class CreateBudgetCommandHandler : IRequestHandler<CreateBudgetCommand, BudgetEntity>
     {
-        private readonly ICommonRepository<BudgetEntity> _repository;
+        private readonly IBudgetRepository _repository;
 
         private readonly IMapper _mapper;
 
-        public CreateBudgetCommandHandler(ICommonRepository<BudgetEntity> repository, IMapper mapper)
+        public CreateBudgetCommandHandler(IBudgetRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;

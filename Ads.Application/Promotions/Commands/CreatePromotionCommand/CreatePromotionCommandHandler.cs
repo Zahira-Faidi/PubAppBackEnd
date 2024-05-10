@@ -7,10 +7,10 @@ namespace Ads.Application.Promotions.Commands.CreatePromotionCommand
 {
     public class CreatePromotionCommandHandler : IRequestHandler<CreatePromotionCommand, PromotionEntity>
     {
-        private readonly ICommonRepository<PromotionEntity> _repository;
+        private readonly IPromotionRepository _repository;
         private readonly IMapper _mapper;
 
-        public CreatePromotionCommandHandler(ICommonRepository<PromotionEntity> repository, IMapper mapper)
+        public CreatePromotionCommandHandler(IPromotionRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;

@@ -6,8 +6,8 @@ namespace Ads.Application.Products.Queries.GetProductsQuery
 {
     public class GetProductsQueryHandler : IRequestHandler<GetProductsQuery, List<ProductEntity>>
     {
-        private readonly ICommonRepository<ProductEntity> _repository;
-        public GetProductsQueryHandler(ICommonRepository<ProductEntity> productRepository)
+        private readonly IProductRepository _repository;
+        public GetProductsQueryHandler(IProductRepository productRepository)
         {
             _repository = productRepository;
         }

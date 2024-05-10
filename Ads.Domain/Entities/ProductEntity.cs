@@ -1,18 +1,20 @@
-﻿using MongoDB.Bson;
+﻿using Ads.Domain.Common.Entities;
 using MongoDB.Bson.Serialization.Attributes;
-namespace Ads.Domain.Entities
+using MongoDB.Bson;
+
+namespace Ads.Domain.Entities;
+
+public class ProductEntity : BaseEntity
 {
-    public class ProductEntity
-    {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string? Id { get; set; }
-        public string? Name { get; set; }
-        public string? Description { get; set; }
-        public string? Image { get; set; }
-        public double Price { get; set; }
-        public int Quantity { get; set; }
-        public string? CategoryId { get; set; }
-        public List<string>? Promotions { get; set; }
-    }
+    public string? Name { get; set; }
+    public string? Description { get; set; }
+    public string? Image { get; set; }
+    public double Price { get; set; }
+    public int Quantity { get; set; }
+
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string? CategoryId { get; set; }
+    [BsonRepresentation(BsonType.ObjectId)]
+
+    public List<string>? Promotions { get; set; }
 }

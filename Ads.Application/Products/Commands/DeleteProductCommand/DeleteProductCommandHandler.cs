@@ -6,8 +6,8 @@ namespace Ads.Application.Products.Commands.DeleteProductCommand
 {
     public class DeleteProductCommandHandler : IRequestHandler<DeleteProductCommand , ProductEntity>
     {
-        private readonly ICommonRepository<ProductEntity> _repository;
-        public DeleteProductCommandHandler(ICommonRepository<ProductEntity> productRepository)
+        private readonly IProductRepository _repository;
+        public DeleteProductCommandHandler(IProductRepository productRepository)
         {
             _repository = productRepository;
         }

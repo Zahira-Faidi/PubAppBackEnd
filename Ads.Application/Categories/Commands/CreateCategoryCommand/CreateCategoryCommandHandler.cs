@@ -7,10 +7,10 @@ namespace Ads.Application.Categories.Commands.CreateCategoryCommand
 {
     public class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, CategoryEntity>
     {
-        private readonly ICommonRepository<CategoryEntity> _repository;
+        private readonly ICategoryRepository _repository;
         private readonly IMapper _mapper;
 
-        public CreateCategoryCommandHandler(ICommonRepository<CategoryEntity> entity, IMapper mapper)
+        public CreateCategoryCommandHandler(ICategoryRepository entity, IMapper mapper)
         {
             _repository = entity;
             _mapper = mapper;

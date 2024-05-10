@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "+0k1aqZ8MWQ/XKTHOQbwTYJJN7OOoqcotI35TgnY9WJt2zOMj2FhxvAEZECI/OD2TLDjOY+pZigRZYqKyBiWMQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Contracts\\Authentication.Contracts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\mongodb.bson\\2.24.0\\mongodb.bson.2.24.0.nupkg.sha512",
+    "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

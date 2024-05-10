@@ -1,5 +1,4 @@
 ﻿using Ads.Application.Common.Interfaces;
-using Ads.Domain.Entities;
 using Ads.Infrastructure.Persistence.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -9,12 +8,12 @@ namespace Ads.Infrastructure.Extensions
     {
         public static IServiceCollection AddInfrastractureConfiguration(this IServiceCollection services)
         {
-            services.AddTransient<ICommonRepository<ProductEntity>, ProductRepository>();
-            services.AddTransient<ICommonRepository<AdEntity>, AdRepository>();
-            services.AddTransient<ICommonRepository<BudgetEntity>, BudgetRepository>();
-            services.AddTransient<ICommonRepository<CampaignEntity>, CampaignRepository>();
-            services.AddTransient<ICommonRepository<CategoryEntity>, CategoryRepository>();
-            services.AddTransient<ICommonRepository<PromotionEntity>, PromotionRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IBudgetRepository, BudgetRepository>();
+            services.AddTransient<ICampaignRepository, CampaignRepository> ();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<IPromotionRepository, PromotionRepository>();
+            services.AddTransient<IAdRepository, AdRepository>(); 
 
             return services;
         }

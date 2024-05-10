@@ -6,8 +6,8 @@ namespace Ads.Application.Ads.Queries.GetAdsQuery
 {
     public class GetAdsQueryHandler : IRequestHandler<GetAdsQuery, List<AdEntity>>
     {
-        private readonly ICommonRepository<AdEntity> _repository;
-        public GetAdsQueryHandler(ICommonRepository<AdEntity> repository)
+        private readonly IAdRepository _repository;
+        public GetAdsQueryHandler(IAdRepository repository)
         {
             _repository = repository;
         }

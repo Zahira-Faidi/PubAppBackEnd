@@ -602,6 +602,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "ErrorOr": "2.0.1",
           "MongoDB.Bson": "2.24.0"
         },
         "compile": {

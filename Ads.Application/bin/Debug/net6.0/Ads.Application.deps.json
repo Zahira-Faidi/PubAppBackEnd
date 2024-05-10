@@ -116,6 +116,7 @@
       "System.Runtime.CompilerServices.Unsafe/5.0.0": {},
       "Ads.Domain/1.0.0": {
         "dependencies": {
+          "ErrorOr": "2.0.1",
           "MongoDB.Bson": "2.24.0"
         },
         "runtime": {

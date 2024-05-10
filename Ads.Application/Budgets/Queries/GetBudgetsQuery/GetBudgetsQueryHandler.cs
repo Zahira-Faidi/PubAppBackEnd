@@ -6,8 +6,8 @@ namespace Ads.Application.Budgets.Queries.GetBudgetsQuery
 {
     public class GetBudgetsQueryHandler : IRequestHandler<GetBudgetsQuery, List<BudgetEntity>>
     {
-        private readonly ICommonRepository<BudgetEntity> _repository;
-        public GetBudgetsQueryHandler(ICommonRepository<BudgetEntity> repository)
+        private readonly IBudgetRepository _repository;
+        public GetBudgetsQueryHandler(IBudgetRepository repository)
         {
             _repository = repository;
         }

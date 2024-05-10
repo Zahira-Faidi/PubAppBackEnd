@@ -1,21 +1,25 @@
 ﻿using Ads.Application.Common.Interfaces;
+using Ads.Domain.Common.Errors;
 using Ads.Domain.Entities;
+using ErrorOr;
 using MediatR;
 
 namespace Ads.Application.Products.Queries.GetProductByIdQuery
 {
-    public class GetProductByIdQueryHandler : IRequestHandler<GetProductByIdQuery, ProductEntity>
+    public class GetProductByIdQueryHandler : IRequestHandler<GetProductByIdQuery, ErrorOr<ProductEntity>>
     {
-        private readonly ICommonRepository<ProductEntity> _repository;
+        private readonly IProductRepository _repository;
 
-        public GetProductByIdQueryHandler(ICommonRepository<ProductEntity> productRepository)
+        public GetProductByIdQueryHandler(IProductRepository productRepository)
         {
             _repository = productRepository;
         }
 
-        public async Task<ProductEntity> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
+        public async Task<ErrorOr<ProductEntity>> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
         {
-            return await _repository.GetDetailsAsync(request.Id, cancellationToken);
+            var id = request.Id;
+            if (id == null) return Errors.Global.IdNotFound;
+            return await _repository.GetDetailsAsync(id, cancellationToken);
         }
     }
 }

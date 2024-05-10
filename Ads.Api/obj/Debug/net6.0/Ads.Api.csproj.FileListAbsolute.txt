@@ -59,3 +59,4 @@ C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Api\obj
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Api\obj\Debug\net6.0\Ads.Api.genruntimeconfig.cache
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Api\obj\Debug\net6.0\ref\Ads.Api.dll
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Api\obj\Debug\net6.0\Ads.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Api\obj\Debug\net6.0\Ads.Api.sourcelink.json

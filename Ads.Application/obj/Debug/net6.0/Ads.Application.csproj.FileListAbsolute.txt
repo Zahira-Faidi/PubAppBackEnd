@@ -13,3 +13,4 @@ C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Applica
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Application\obj\Debug\net6.0\refint\Ads.Application.dll
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Application\obj\Debug\net6.0\Ads.Application.pdb
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Application\obj\Debug\net6.0\ref\Ads.Application.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Application\obj\Debug\net6.0\Ads.Application.sourcelink.json

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "TBVScLiJtA6MuQKeTWNWB9znHr2rGZL6XQQcvJUxQLs0sfdjeDToFEP0LabB4jqWjCXPjsd71oaWUFdfEx5IWw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\User.Application\\User.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

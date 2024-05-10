@@ -6,9 +6,9 @@ namespace Ads.Application.Promotions.Queries.GetPromotionByIdQuery
 {
     public class GetPromotionByIdQueryHandler : IRequestHandler<GetPromotionByIdQuery, PromotionEntity>
     {
-        private readonly ICommonRepository<PromotionEntity> _repository;
+        private readonly IPromotionRepository _repository;
 
-        public GetPromotionByIdQueryHandler(ICommonRepository<PromotionEntity> promotionRepository)
+        public GetPromotionByIdQueryHandler(IPromotionRepository promotionRepository)
         {
             _repository = promotionRepository;
         }

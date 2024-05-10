@@ -6,9 +6,9 @@ namespace Ads.Application.Campaigns.Queries.GetCampaignByIdQuery
 {
     public class GetCampaignByIdQueryHandler : IRequestHandler<GetCampaignByIdQuery, CampaignEntity>
     {
-        private readonly ICommonRepository<CampaignEntity> _repository;
+        private readonly ICampaignRepository _repository;
 
-        public GetCampaignByIdQueryHandler(ICommonRepository<CampaignEntity> repository)
+        public GetCampaignByIdQueryHandler(ICampaignRepository repository)
         {
             _repository = repository;
         }

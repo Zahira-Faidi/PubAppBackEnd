@@ -6,9 +6,9 @@ namespace Ads.Application.Budgets.Commands.UpdateBudgetCommand
 {
     public class UpdateBudgetCommandHandler : IRequestHandler<UpdateBudgetCommand, BudgetEntity>
     {
-        private readonly ICommonRepository<BudgetEntity> _repository;
+        private readonly IBudgetRepository _repository;
 
-        public UpdateBudgetCommandHandler(ICommonRepository<BudgetEntity> repository)
+        public UpdateBudgetCommandHandler(IBudgetRepository repository)
         {
             _repository = repository;
         }
@@ -34,7 +34,7 @@ namespace Ads.Application.Budgets.Commands.UpdateBudgetCommand
 
                 existingBudget.Campaigns = request.Campaigns; // Update campaigns list if needed
 
-                await _repository.UpdateAsync(existingBudget, cancellationToken);
+                await _repository.UpdateAsync(request.Id , existingBudget, cancellationToken);
 
                 return existingBudget;
             }

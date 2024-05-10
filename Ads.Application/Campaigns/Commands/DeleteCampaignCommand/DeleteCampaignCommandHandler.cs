@@ -6,8 +6,8 @@ namespace Ads.Application.Campaigns.Commands.DeleteCampaignCommand
 {
     public class DeleteCampaignCommandHandler : IRequestHandler<DeleteCampaignCommand, CampaignEntity>
     {
-        private readonly ICommonRepository<CampaignEntity> _repository;
-        public DeleteCampaignCommandHandler(ICommonRepository<CampaignEntity> repository)
+        private readonly ICampaignRepository _repository;
+        public DeleteCampaignCommandHandler(ICampaignRepository repository)
         {
             _repository = repository;
         }

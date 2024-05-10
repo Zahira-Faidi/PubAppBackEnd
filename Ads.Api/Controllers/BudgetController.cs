@@ -1,4 +1,4 @@
-﻿using Ads.Api.Common.Interfaces;
+﻿using Ads.Api.Common.Utils;
 using Ads.Application.Budgets.Commands.CreateBudgetCommand;
 using Ads.Application.Budgets.Commands.DeleteBudgetCommand;
 using Ads.Application.Budgets.Commands.UpdateBudgetCommand;
@@ -11,7 +11,7 @@ namespace Ads.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BudgetController : ControllerBase, ICommonController<CreateBudgetCommand, UpdateBudgetCommand>
+    public class BudgetController : ControllerBase
     {
         private readonly IMediator _mediator;
 
@@ -31,7 +31,7 @@ namespace Ads.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id, CancellationToken cancellationToken)
         {
-            if (!IsValidId(id))
+            if (!ValidationUtils.IsValidId(id))
             {
                 return BadRequest("Invalid id format");
             }
@@ -51,9 +51,9 @@ namespace Ads.Api.Controllers
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] UpdateBudgetCommand command, CancellationToken cancellationToken)
         {
-            if (!IsValidId(command.Id))
+            if (!ValidationUtils.IsValidId(command.Id))
             {
-                return BadRequest("Invalid id format or id mismatch");
+                return BadRequest("Invalid id format");
             }
             return Ok(await _mediator.Send(command, cancellationToken));
         }
@@ -61,19 +61,13 @@ namespace Ads.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id, CancellationToken cancellationToken)
         {
-            if (!IsValidId(id))
+            if (!ValidationUtils.IsValidId(id))
             {
                 return BadRequest("Invalid id format");
             }
 
             var command = new DeleteBudgetCommand(id);
             return Ok(await _mediator.Send(command, cancellationToken));
-        }
-
-        private bool IsValidId(string id)
-        {
-            // Replace with your actual validation logic for budget IDs
-            return !string.IsNullOrEmpty(id) && id.Length == 24 && id.All(char.IsLetterOrDigit);
         }
     }
 }

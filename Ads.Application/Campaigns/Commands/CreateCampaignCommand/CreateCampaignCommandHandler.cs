@@ -7,9 +7,9 @@ namespace Ads.Application.Campaigns.Commands.CreateCampaignCommand
 {
     public class CreateCampaignCommandHandler : IRequestHandler<CreateCampaignCommand, CampaignEntity>
     {
-        private readonly ICommonRepository<CampaignEntity> _repository;
+        private readonly ICampaignRepository _repository;
         private readonly IMapper _mapper;
-        public CreateCampaignCommandHandler(ICommonRepository<CampaignEntity> repository, IMapper mapper)
+        public CreateCampaignCommandHandler(ICampaignRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;

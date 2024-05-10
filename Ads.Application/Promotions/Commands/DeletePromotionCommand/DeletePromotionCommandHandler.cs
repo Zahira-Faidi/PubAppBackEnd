@@ -6,9 +6,9 @@ namespace Ads.Application.Promotions.Commands.DeletePromotionCommand
 {
     public class DeletePromotionCommandHandler : IRequestHandler<DeletePromotionCommand, PromotionEntity>
     {
-        private readonly ICommonRepository<PromotionEntity> _repository;
+        private readonly IPromotionRepository _repository;
 
-        public DeletePromotionCommandHandler(ICommonRepository<PromotionEntity> promotionRepository)
+        public DeletePromotionCommandHandler(IPromotionRepository promotionRepository)
         {
             _repository = promotionRepository;
         }

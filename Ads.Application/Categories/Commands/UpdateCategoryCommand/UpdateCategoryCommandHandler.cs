@@ -6,8 +6,8 @@ namespace Ads.Application.Categories.Commands.UpdateCategoryCommand
 {
     public class UpdateCategoryCommandHandler : IRequestHandler<UpdateCategoryCommand, CategoryEntity>
     {
-        private readonly ICommonRepository<CategoryEntity> _repository;
-        public UpdateCategoryCommandHandler(ICommonRepository<CategoryEntity> repository)
+        private readonly ICategoryRepository _repository;
+        public UpdateCategoryCommandHandler(ICategoryRepository repository)
         {
             _repository = repository;
         }
@@ -25,7 +25,7 @@ namespace Ads.Application.Categories.Commands.UpdateCategoryCommand
 
                 existingCategory.Name = request.Name;
 
-                await _repository.UpdateAsync(existingCategory, cancellationToken);
+                await _repository.UpdateAsync(request.Id, existingCategory, cancellationToken);
 
                 return existingCategory;
             }

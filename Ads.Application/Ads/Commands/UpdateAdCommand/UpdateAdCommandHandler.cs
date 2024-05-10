@@ -6,8 +6,8 @@ namespace Ads.Application.Ads.Commands.UpdateAdCommand
 {
     public class UpdateAdCommandHandler : IRequestHandler<UpdateAdCommand, AdEntity>
     {
-        private readonly ICommonRepository<AdEntity> _repository;
-        public UpdateAdCommandHandler(ICommonRepository<AdEntity> repository)
+        private readonly IAdRepository _repository;
+        public UpdateAdCommandHandler(IAdRepository repository)
         {
             _repository = repository;
         }
@@ -22,11 +22,11 @@ namespace Ads.Application.Ads.Commands.UpdateAdCommand
                     throw new Exception($"Ad with id {request.Id} not found");
                 }
 
-                existingAd.Content = request.Content;
-                existingAd.AllocatedBudget = request.AllocatedBudget;
-                existingAd.CampaignId = request.CampaignId; 
-
-                await _repository.UpdateAsync(existingAd, cancellationToken);
+                existingAd.Content = request.Content ?? existingAd.Content;
+                if (existingAd.AllocatedBudget == 0) 
+                    existingAd.AllocatedBudget = request.AllocatedBudget;
+                existingAd.CampaignId = request.CampaignId ?? existingAd.CampaignId;
+                await _repository.UpdateAsync(request.Id, existingAd, cancellationToken);
 
                 return existingAd;
             }

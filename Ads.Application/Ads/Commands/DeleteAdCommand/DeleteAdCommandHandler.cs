@@ -6,8 +6,8 @@ namespace Ads.Application.Ads.Commands.DeleteAdCommand
 {
     public class DeleteAdCommandHandler : IRequestHandler<DeleteAdCommand, AdEntity>
     {
-        private readonly ICommonRepository<AdEntity> _repository;
-        public DeleteAdCommandHandler(ICommonRepository<AdEntity> repository)
+        private readonly IAdRepository _repository;
+        public DeleteAdCommandHandler(IAdRepository repository)
         {
             _repository = repository;
         }

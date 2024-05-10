@@ -7,9 +7,9 @@ namespace Ads.Application.Products.Commands.CreateProductCommand
 {
     public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand , ProductEntity>
     {
-        private readonly ICommonRepository<ProductEntity> _repository;
+        private readonly IProductRepository _repository;
         private readonly IMapper _mapper;
-        public CreateProductCommandHandler(ICommonRepository<ProductEntity> entity, IMapper mapper)
+        public CreateProductCommandHandler(IProductRepository entity, IMapper mapper)
         {
             _repository = entity;
             _mapper = mapper;

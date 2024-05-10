@@ -1,12 +1,8 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
-namespace Ads.Domain.Entities
+﻿using Ads.Domain.Common.Entities;
+
+namespace Ads.Domain.Entities;
+
+public class CategoryEntity : BaseEntity
 {
-    public class CategoryEntity
-    {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string? Id { get; set; }
-        public string? Name { get; set; }
-    }
+    public string? Name { get; set; }
 }

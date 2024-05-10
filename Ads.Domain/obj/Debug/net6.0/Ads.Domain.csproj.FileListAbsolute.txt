@@ -10,3 +10,4 @@ C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\obj\Debug\net6.0\refint\Ads.Domain.dll
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\obj\Debug\net6.0\Ads.Domain.pdb
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\obj\Debug\net6.0\ref\Ads.Domain.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Ads.Domain\obj\Debug\net6.0\Ads.Domain.sourcelink.json

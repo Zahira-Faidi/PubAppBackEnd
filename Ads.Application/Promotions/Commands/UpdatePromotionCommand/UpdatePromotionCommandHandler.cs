@@ -6,9 +6,9 @@ namespace Ads.Application.Promotions.Commands.UpdatePromotionCommand
 {
     public class UpdatePromotionCommandHandler : IRequestHandler<UpdatePromotionCommand, PromotionEntity>
     {
-        private readonly ICommonRepository<PromotionEntity> _repository;
+        private readonly IPromotionRepository _repository;
 
-        public UpdatePromotionCommandHandler(ICommonRepository<PromotionEntity> promotionRepository)
+        public UpdatePromotionCommandHandler(IPromotionRepository promotionRepository)
         {
             _repository = promotionRepository;
         }
@@ -32,7 +32,7 @@ namespace Ads.Application.Promotions.Commands.UpdatePromotionCommand
 
             try
             {
-                await _repository.UpdateAsync(updatedPromotion, cancellationToken);
+                await _repository.UpdateAsync(request.Id,updatedPromotion, cancellationToken);
             }
             catch (Exception ex)
             {

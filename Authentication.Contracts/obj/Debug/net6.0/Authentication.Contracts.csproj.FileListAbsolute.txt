@@ -1,0 +1,16 @@
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\bin\Debug\net6.0\Authentication.Contracts.deps.json
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\bin\Debug\net6.0\Authentication.Contracts.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\bin\Debug\net6.0\Authentication.Contracts.pdb
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\bin\Debug\net6.0\Authentication.Domain.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\bin\Debug\net6.0\Authentication.Domain.pdb
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\obj\Debug\net6.0\Authentication.Contracts.csproj.AssemblyReference.cache
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\obj\Debug\net6.0\Authentication.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\obj\Debug\net6.0\Authentication.Contracts.AssemblyInfoInputs.cache
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\obj\Debug\net6.0\Authentication.Contracts.AssemblyInfo.cs
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\obj\Debug\net6.0\Authentication.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\obj\Debug\net6.0\Authentication.Contracts.sourcelink.json
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\obj\Debug\net6.0\Authenti.D3855F93.Up2Date
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\obj\Debug\net6.0\Authentication.Contracts.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\obj\Debug\net6.0\refint\Authentication.Contracts.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\obj\Debug\net6.0\Authentication.Contracts.pdb
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Contracts\obj\Debug\net6.0\ref\Authentication.Contracts.dll

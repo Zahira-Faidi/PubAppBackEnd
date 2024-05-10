@@ -7,10 +7,10 @@ namespace Ads.Application.Ads.Commands.CreateAdCommand
 {
     public class CreateAdCommandHandler : IRequestHandler<CreateAdCommand, AdEntity>
     {
-        private readonly ICommonRepository<AdEntity> _repository;
+        private readonly IAdRepository _repository;
         private readonly IMapper _mapper;
 
-        public CreateAdCommandHandler(ICommonRepository<AdEntity> repository, IMapper mapper)
+        public CreateAdCommandHandler(IAdRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;

@@ -1,13 +1,11 @@
-using Ads.Infrastructure.Persistence.DataBase;
-using Ads.Infrastructure.Extensions;
 using Ads.Application.Extensions;
+using Ads.Infrastructure.Extensions;
+using Ads.Infrastructure.Persistence.DataBase;
 using MediatR;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
 var builder = WebApplication.CreateBuilder(args);
-
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

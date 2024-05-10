@@ -6,8 +6,8 @@ namespace Ads.Application.Categories.Queries.GetCategoryByIdQuery
 {
     public class GetCategoryByIdQueryHandler : IRequestHandler<GetCategoryByIdQuery, CategoryEntity>
     {
-        public readonly ICommonRepository<CategoryEntity> _repository;
-        public GetCategoryByIdQueryHandler(ICommonRepository<CategoryEntity> repository)
+        public readonly ICategoryRepository _repository;
+        public GetCategoryByIdQueryHandler(ICategoryRepository repository)
         {
             _repository = repository;
         }

@@ -6,8 +6,8 @@ namespace Ads.Application.Categories.Commands.DeleteCategoryCommand
 {
     public class DeleteCategoryCommandHandler : IRequestHandler<DeleteCategoryCommand, CategoryEntity>
     {
-        private readonly ICommonRepository<CategoryEntity> _repository;
-        public DeleteCategoryCommandHandler(ICommonRepository<CategoryEntity> repository)
+        private readonly ICategoryRepository _repository;
+        public DeleteCategoryCommandHandler(ICategoryRepository repository)
         {
             _repository = repository;
         }

@@ -51,3 +51,4 @@ C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\IS\bin\Debu
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\IS\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\IS\obj\Debug\net6.0\IS.csproj.AssemblyReference.cache
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\IS\obj\Debug\net6.0\IS.csproj.Up2Date
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\IS\obj\Debug\net6.0\IS.sourcelink.json

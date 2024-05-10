@@ -6,8 +6,8 @@ namespace Ads.Application.Promotions.Queries.GetPromotionsQuery
 {
     public class GetPromotionQueryHandler : IRequestHandler<GetPromotionsQuery, List<PromotionEntity>>
     {
-        private readonly ICommonRepository<PromotionEntity> _repository;
-        public GetPromotionQueryHandler(ICommonRepository<PromotionEntity> repository) 
+        private readonly IPromotionRepository _repository;
+        public GetPromotionQueryHandler(IPromotionRepository repository) 
         { 
             _repository = repository;
         }

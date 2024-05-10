@@ -1,15 +1,10 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
+﻿using Ads.Domain.Common.Entities;
 
-namespace Ads.Domain.Entities
+namespace Ads.Domain.Entities;
+
+public class PromotionEntity : BaseEntity
 {
-    public record PromotionEntity
-    {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string? Id { get; init; }
-        public string? Description { get; init; }
-        public double Discount { get; init; }
-        public List<string>? Products { get; init; }
-    }
+    public string? Description { get; set; }
+    public double Discount { get; set; }
+    public List<string>? Products { get; set; }
 }

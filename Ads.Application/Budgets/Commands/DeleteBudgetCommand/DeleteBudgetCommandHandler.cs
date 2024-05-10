@@ -6,8 +6,8 @@ namespace Ads.Application.Budgets.Commands.DeleteBudgetCommand
 {
     public class DeleteBudgetCommandHandler : IRequestHandler<DeleteBudgetCommand, BudgetEntity>
     {
-        private readonly ICommonRepository<BudgetEntity> _repository;
-        public DeleteBudgetCommandHandler(ICommonRepository<BudgetEntity> repository)
+        private readonly IBudgetRepository _repository;
+        public DeleteBudgetCommandHandler(IBudgetRepository repository)
         {
             _repository = repository;
         }

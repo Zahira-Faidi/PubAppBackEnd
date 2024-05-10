@@ -1,14 +1,14 @@
-﻿using MongoDB.Bson;
+﻿using Ads.Domain.Common.Entities;
 using MongoDB.Bson.Serialization.Attributes;
-namespace Ads.Domain.Entities
+using MongoDB.Bson;
+
+namespace Ads.Domain.Entities;
+
+public class BudgetEntity: BaseEntity
 {
-    public class BudgetEntity
-    {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string? Id { get; set; }
-        public double TotalBudget { get; set; }
-        public double DailyBudget { get; set; }
-        public List<string>? Campaigns { get; set; }
-    }
+    public double TotalBudget { get; set; }
+    public double DailyBudget { get; set; }
+
+    [BsonRepresentation(BsonType.ObjectId)]
+    public List<string>? Campaigns { get; set; }
 }

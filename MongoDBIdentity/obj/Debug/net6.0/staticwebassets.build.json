@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DFN+ZyENpRkxjNKFf3AXIZUIuYMrcATsb5fJzaClUfo=",
+  "Source": "MongoDBIdentity",
+  "BasePath": "_content/MongoDBIdentity",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,4 +1,4 @@
-﻿using Ads.Api.Common.Interfaces;
+﻿using Ads.Api.Common.Utils;
 using Ads.Application.Ads.Commands.CreateAdCommand;
 using Ads.Application.Ads.Commands.DeleteAdCommand;
 using Ads.Application.Ads.Commands.UpdateAdCommand;
@@ -11,7 +11,7 @@ namespace Ads.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AdController : ControllerBase, ICommonController<CreateAdCommand, UpdateAdCommand>
+    public class AdController : ControllerBase
     {
         private readonly IMediator _mediator;
         public AdController(IMediator mediator)
@@ -29,7 +29,7 @@ namespace Ads.Api.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(string id, CancellationToken cancellationToken)
         {
-            if (!IsValidId(id))
+            if (!ValidationUtils.IsValidId(id))
             {
                 return BadRequest("Invalid id format");
             }
@@ -49,9 +49,9 @@ namespace Ads.Api.Controllers
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] UpdateAdCommand command, CancellationToken cancellationToken)
         {
-            if (!IsValidId(command.Id))
+            if (!ValidationUtils.IsValidId(command.Id))
             {
-                return BadRequest("Invalid id format or id mismatch");
+                return BadRequest("Invalid id format");
             }
             return Ok(await _mediator.Send(command, cancellationToken));
         }
@@ -59,19 +59,13 @@ namespace Ads.Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id, CancellationToken cancellationToken)
         {
-            if (!IsValidId(id))
+            if (!ValidationUtils.IsValidId(id))
             {
                 return BadRequest("Invalid id format");
             }
 
             var command = new DeleteAdCommand(id);
             return Ok(await _mediator.Send(command, cancellationToken));
-        }
-
-        private bool IsValidId(string id)
-        {
-            // Replace with your actual validation logic for ad IDs
-            return !string.IsNullOrEmpty(id) && id.Length == 24 && id.All(char.IsLetterOrDigit);
         }
     }
 }

@@ -6,8 +6,8 @@ namespace Ads.Application.Campaigns.Commands.UpdateCampaignCommand
 {
     public class UpdateCampaignCommandHandler : IRequestHandler<UpdateCampaignCommand, CampaignEntity>
     {
-        private readonly ICommonRepository<CampaignEntity> _repository;
-        public UpdateCampaignCommandHandler(ICommonRepository<CampaignEntity> repository)
+        private readonly ICampaignRepository _repository;
+        public UpdateCampaignCommandHandler(ICampaignRepository repository)
         {
             _repository = repository;
         }
@@ -23,13 +23,13 @@ namespace Ads.Application.Campaigns.Commands.UpdateCampaignCommand
                 }
                 existingCampaign.Name = request.Name ?? existingCampaign.Name;
                 existingCampaign.Description = request.Description ?? existingCampaign.Description;
-                existingCampaign.StartDate = request.StartDate;
+                existingCampaign.StartDate = request.StartDate ;
                 existingCampaign.EndDate = request.EndDate;
                 existingCampaign.Budget = request.Budget;
                 existingCampaign.Status = request.Status;
                 existingCampaign.BudgetId = request.BudgetId ?? existingCampaign.BudgetId;
                 existingCampaign.Ads = request.Ads;
-                await _repository.UpdateAsync(existingCampaign, cancellationToken);
+                await _repository.UpdateAsync(request.Id, existingCampaign, cancellationToken);
 
                 return existingCampaign;
             }
