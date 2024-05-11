@@ -1,6 +1,6 @@
 ﻿using Authentication.Domain.Entities;
 
-namespace Authentication.Application.Services.Authentication;
+namespace Authentication.Application.Users.Common;
 
 public record AuthenticationResult
 (

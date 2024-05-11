@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.domain\\entities\\adentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|solutionrelative:ads.domain\\entities\\adentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.domain\\entities\\budgetentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|solutionrelative:ads.domain\\entities\\budgetentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,37 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 596,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdEntity.cs",
-              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\Entities\\AdEntity.cs",
-              "RelativeDocumentMoniker": "Ads.Domain\\Entities\\AdEntity.cs",
-              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\Entities\\AdEntity.cs",
-              "RelativeToolTip": "Ads.Domain\\Entities\\AdEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T14:17:29.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BudgetEntity.cs",
-              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\Entities\\BudgetEntity.cs",
-              "RelativeDocumentMoniker": "Ads.Domain\\Entities\\BudgetEntity.cs",
-              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\Entities\\BudgetEntity.cs",
-              "RelativeToolTip": "Ads.Domain\\Entities\\BudgetEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T10:37:55.482Z",
-              "EditorCaption": ""
             }
           ]
         }

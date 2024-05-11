@@ -1,10 +1,12 @@
 ﻿using Authentication.Application.Common.Interfaces.Persistence;
-using Authentication.Domain.Entities;
+using Authentication.Application.Users.Common;
+using Authentication.Domain.common;
+using ErrorOr;
 using MediatR;
 
 namespace Authentication.Application.Users.Queries.GetUserByIdQuery;
 
-public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, User>
+public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, ErrorOr<UserResult>>
 {
     private readonly IUserRepository _userRepository;
 
@@ -13,8 +15,17 @@ public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, User>
         _userRepository = userRepository;
     }
 
-    public async Task<User> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
+    public async Task<ErrorOr<UserResult>> Handle(GetUserByIdQuery request, CancellationToken cancellationToken)
     {
-        return await _userRepository.GetByIdAsync(request.UserId);
+        if (request.Id == null)
+        {
+            return Errors.User.IdNotFound;
+        }
+        var user = await _userRepository.GetByIdAsync(request.Id);
+        if (user == null)
+        {
+            return Errors.User.IdNotFound;
+        }
+        return new UserResult(user.Id, user.FirstName, user.LastName, user.Email, user.Role, user.CreatedDateTime, user.UpdatedDateTime);
     }
 }

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "hQCflfGmNMV7H7LHBwUkikP9evGQD4NKZjPyICPkfqnZj9KpKOs0474ShLocp1IwsRzv+2P8S0uJfRh6cZtT9w==",
+  "dgSpecHash": "l2X1JWn8FLLZBsE8kJDNowKX6QKmt4LGknWN/KN9HZVh0hJ06rMbnfLCcRgwrEvOxVN+CC3qfmLPTLHTAK+pyw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Infrastructure\\Authentication.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
     "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
     "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

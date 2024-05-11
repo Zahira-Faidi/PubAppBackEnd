@@ -1,5 +1,12 @@
-﻿namespace Authentication.Application.Users.Queries.GetUserByIdQuery;
+﻿using FluentValidation;
 
-public class GetUserByIdQueryValidator
+namespace Authentication.Application.Users.Queries.GetUserByIdQuery;
+
+public class GetUserByIdQueryValidator : AbstractValidator<GetUserByIdQuery>
 {
+
+    public GetUserByIdQueryValidator()
+    {
+        RuleFor(x => x.Id).NotEmpty();
+    }
 }

@@ -1,12 +1,15 @@
 ﻿using Authentication.Application.Common.Interfaces.Authentication;
 using Authentication.Application.Common.Interfaces.Persistence;
-using Authentication.Application.Services.Authentication;
+using Authentication.Application.Users.Common;
+using Authentication.Domain.common;
+using Authentication.Domain.Entities;
 using Authentication.Domain.Interface;
+using ErrorOr;
 using MediatR;
 
 namespace Authentication.Application.Users.Queries.LoginQuery;
 
-public class LoginQueryHandler : IRequestHandler<LoginQuery , AuthenticationResult>
+public class LoginQueryHandler : IRequestHandler<LoginQuery , ErrorOr<AuthenticationResult>>
 {
     private readonly IPasswordHasher _passwordHasher;
     private readonly IUserRepository _userRepository;
@@ -18,16 +21,19 @@ public class LoginQueryHandler : IRequestHandler<LoginQuery , AuthenticationResu
         _jwtTokenGenerator = jwtTokenGenerator;
     }
 
-    public async Task<AuthenticationResult> Handle(LoginQuery request, CancellationToken cancellationToken)
+    public async Task<ErrorOr<AuthenticationResult>> Handle(LoginQuery request, CancellationToken cancellationToken)
     {
-        // Récupérer l'utilisateur à partir de l'email
-        var user = await _userRepository.GetUserByEmailAsync(request.Email);
-        // Vérifier si l'utilisateur existe et si le mot de passe est correct
-        if (user == null || _passwordHasher.VerifyPassword(user.Password, request.Password))
-        {
-            return null; // Authentification échouée
-        }
+        if (await _userRepository.GetUserByEmailAsync(request.Email) is not User user)
+
+            return Errors.Authentication.InvalidCredentials;
+       
+        bool passwordValid = _passwordHasher.VerifyPassword(user.Password, request.Password);
+
+        if (!passwordValid)
+            return Errors.Authentication.InvalidCredentials;
+
         var token = _jwtTokenGenerator.GenerateToken(user);
+
         return new AuthenticationResult(user, token);
     }
 }

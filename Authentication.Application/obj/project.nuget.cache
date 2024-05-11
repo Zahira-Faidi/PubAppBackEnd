@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HgQO/oUa76yIRQao+Go8Rz3Pza+TiFif/ADzcSEFX7oaewvo8S0nS0/qH97MtX1APiEaL/+Ipcb1DSmx4hBRIw==",
+  "dgSpecHash": "yZxpqD0mrZN+yjP6mZxWRja+q+eKyrFeH5fadi+T6jD+B7WkCjwMz7wB6HUrWQ1u4GwJNfKmGMvRi9grR7jyUg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Application\\Authentication.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\erroror\\2.0.1\\erroror.2.0.1.nupkg.sha512",
     "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
     "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

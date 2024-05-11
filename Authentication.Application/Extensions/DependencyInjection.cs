@@ -1,5 +1,4 @@
-﻿using Authentication.Application.Services.Authentication;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 
 namespace Authentication.Application.Extensions
 {
@@ -7,7 +6,7 @@ namespace Authentication.Application.Extensions
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            services.AddScoped<IAuthenticationService, AuthenticationService>();
+           // services.AddScoped<IAuthenticationService, AuthenticationService>();
 
             return services;
         }

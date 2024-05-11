@@ -49,7 +49,6 @@ C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authenticat
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\Authentication.Infrastructure.dll
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\Authentication.Infrastructure.pdb
@@ -69,3 +68,9 @@ C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authenticat
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\MediatR.Contracts.dll
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\ErrorOr.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ZAHIRA.FAIDI\OneDrive - Akkodis\Bureau\PubAppBackEnd\PubApp\Authentication.Api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

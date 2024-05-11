@@ -1,6 +1,4 @@
-﻿using Authentication.Domain.Entities;
-
-namespace Authentication.Contracts.Authentication;
+﻿namespace Authentication.Contracts.Authentication;
 
 public record AuthenticationResponse
     (

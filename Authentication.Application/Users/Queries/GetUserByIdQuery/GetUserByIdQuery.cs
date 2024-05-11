@@ -1,9 +1,10 @@
-﻿using Authentication.Domain.Entities;
+﻿using Authentication.Application.Users.Common;
+using ErrorOr;
 using MediatR;
 
 namespace Authentication.Application.Users.Queries.GetUserByIdQuery;
 
-public class GetUserByIdQuery : IRequest<User>
+public class GetUserByIdQuery : IRequest<ErrorOr<UserResult>>
 {
-    public string UserId { get; set; }
+    public string Id { get; set; }
 }

@@ -1,6 +1,12 @@
-﻿namespace Authentication.Application.Common.Errors;
+﻿using System.Net;
 
-public class DuplicateEmailException : Exception
+namespace Authentication.Application.Common.Errors;
+
+public class DuplicateEmailException : Exception, IServiceException
 {
-   public DuplicateEmailException() : base("Duplicated Email") { }
+
+
+    public HttpStatusCode StatusCode => HttpStatusCode.Conflict;
+
+    public string ErrorMessage => "Email Already Exists";
 }

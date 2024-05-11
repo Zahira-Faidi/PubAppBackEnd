@@ -1,4 +1,5 @@
-﻿using Authentication.Application.Services.Authentication;
+﻿using Authentication.Application.Users.Common;
+using ErrorOr;
 using MediatR;
 
 namespace Authentication.Application.Users.Commands.RegisterUserCommand;
@@ -10,4 +11,4 @@ public record RegisterUserCommand
      string Email,
      string Password,
      string Role
-) : IRequest<AuthenticationResult>;
+) : IRequest<ErrorOr<AuthenticationResult>>;
