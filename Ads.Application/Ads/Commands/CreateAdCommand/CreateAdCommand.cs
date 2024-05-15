@@ -5,8 +5,9 @@ namespace Ads.Application.Ads.Commands.CreateAdCommand
 {
     public record CreateAdCommand
         (
-            string Content,
-            double AllocatedBudget,
+            string Name,
+            DateTime StartDate,
+            DateTime EndDate,
             string CampaignId
         ) : IRequest<AdEntity>;
 }

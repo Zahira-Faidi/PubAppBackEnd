@@ -6,7 +6,6 @@ namespace Ads.Application.Budgets.Commands.CreateBudgetCommand
     public record CreateBudgetCommand
         (
             double TotalBudget,
-            double DailyBudget,
-            List<string> Campaigns
+            double DailyBudget
         ) : IRequest<BudgetEntity>;
 }

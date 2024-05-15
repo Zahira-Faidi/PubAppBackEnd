@@ -6,8 +6,9 @@ namespace Ads.Domain.Entities;
 
 public class AdEntity : BaseEntity
 {
-    public string? Content { get; set; }
-    public double AllocatedBudget { get; set; }
+    public string? Name { get; set; }
+    public DateTime StartDate { get; set; }
+    public DateTime EndDate { get; set; }
 
     [BsonRepresentation(BsonType.ObjectId)]
     public string? CampaignId { get; set; }

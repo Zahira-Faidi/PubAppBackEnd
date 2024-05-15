@@ -22,9 +22,7 @@ namespace Ads.Application.Ads.Commands.UpdateAdCommand
                     throw new Exception($"Ad with id {request.Id} not found");
                 }
 
-                existingAd.Content = request.Content ?? existingAd.Content;
-                if (existingAd.AllocatedBudget == 0) 
-                    existingAd.AllocatedBudget = request.AllocatedBudget;
+                existingAd.Name = request.Name ?? existingAd.Name;
                 existingAd.CampaignId = request.CampaignId ?? existingAd.CampaignId;
                 await _repository.UpdateAsync(request.Id, existingAd, cancellationToken);
 

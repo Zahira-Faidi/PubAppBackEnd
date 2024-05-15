@@ -8,10 +8,10 @@ namespace Ads.Application.Campaigns.Commands.UpdateCampaignCommand
     (
         string Id,
         string Name,
-        string Description,
+       //string Description,
         DateTime StartDate,
         DateTime EndDate,
-        double Budget,
+        //double Budget,
         Status Status,
         List<string>? Ads,
         string? BudgetId

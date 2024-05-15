@@ -22,10 +22,10 @@ namespace Ads.Application.Campaigns.Commands.UpdateCampaignCommand
                     throw new Exception($"Campaign with id {request.Id} not found");
                 }
                 existingCampaign.Name = request.Name ?? existingCampaign.Name;
-                existingCampaign.Description = request.Description ?? existingCampaign.Description;
+                //existingCampaign.Description = request.Description ?? existingCampaign.Description;
                 existingCampaign.StartDate = request.StartDate ;
                 existingCampaign.EndDate = request.EndDate;
-                existingCampaign.Budget = request.Budget;
+                //existingCampaign.Budget = request.Budget;
                 existingCampaign.Status = request.Status;
                 existingCampaign.BudgetId = request.BudgetId ?? existingCampaign.BudgetId;
                 existingCampaign.Ads = request.Ads;

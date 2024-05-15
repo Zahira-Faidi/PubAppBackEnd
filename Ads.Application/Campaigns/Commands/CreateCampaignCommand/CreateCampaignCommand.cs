@@ -7,10 +7,9 @@ namespace Ads.Application.Campaigns.Commands.CreateCampaignCommand
     public record CreateCampaignCommand
     (
         string Name,
-        string Description,
+        //string Description,
         DateTime StartDate,
         DateTime EndDate,
-        double Budget,
         Status Status,
         List<string>? Ads,
         string? BudgetId

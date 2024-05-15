@@ -32,8 +32,6 @@ namespace Ads.Application.Budgets.Commands.UpdateBudgetCommand
                 else
                     existingBudget.DailyBudget = request.DailyBudget;
 
-                existingBudget.Campaigns = request.Campaigns; // Update campaigns list if needed
-
                 await _repository.UpdateAsync(request.Id , existingBudget, cancellationToken);
 
                 return existingBudget;

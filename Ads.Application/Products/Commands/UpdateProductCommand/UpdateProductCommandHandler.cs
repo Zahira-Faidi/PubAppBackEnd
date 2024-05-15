@@ -26,7 +26,7 @@ public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand,
 
             // Update existingProduct properties based on request
             existingProduct.Name = request.Name ?? existingProduct.Name;
-            existingProduct.Description = request.Description ?? existingProduct.Description;
+            //existingProduct.Description = request.Description ?? existingProduct.Description;
             existingProduct.Image = request.Image ?? existingProduct.Image;
             if (request.Price == 0)
                 existingProduct.Price = existingProduct.Price;
@@ -38,7 +38,7 @@ public class UpdateProductCommandHandler : IRequestHandler<UpdateProductCommand,
                 existingProduct.Quantity = request.Quantity;
 
             existingProduct.CategoryId = request.CategoryId ?? existingProduct.CategoryId;
-            existingProduct.Promotions = request.Promotions;
+           //existingProduct.Promotions = request.Promotions;
 
             await _repository.UpdateAsync(request.Id, existingProduct, cancellationToken);
 
