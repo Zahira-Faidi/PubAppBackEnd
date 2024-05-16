@@ -7,10 +7,11 @@ namespace Ads.Application.Products.Commands.UpdateProductCommand
         string Id,
         string? Name,
         //string? Description,
-        string? Image,
+        string Image,
         double Price,
         int Quantity,
-        string? CategoryId
-        //List<string> Promotions
+        int CPC,
+        string CategoryId
+        //string PromotionId
         ) : IRequest<ProductEntity>;
 }

@@ -8,10 +8,13 @@ namespace Ads.Application.Campaigns.Commands.CreateCampaignCommand
     (
         string Name,
         //string Description,
-        DateTime StartDate,
-        DateTime EndDate,
+        DateTimeOffset StartDate,
+        DateTimeOffset EndDate,
+        //double Budget,
+        int Impressions,
+        string SellerId,
         Status Status,
-        List<string>? Ads,
+        //List<string>? Ads,
         string? BudgetId
     ) :IRequest<CampaignEntity>;
 }

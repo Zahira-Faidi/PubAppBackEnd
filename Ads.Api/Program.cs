@@ -23,6 +23,7 @@ builder.Services.Configure<DataBaseSettings>(builder.Configuration.GetSection("M
 builder.Services.AddInfrastractureConfiguration();
 builder.Services.AddApplicationConfiguration();
 builder.Services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 

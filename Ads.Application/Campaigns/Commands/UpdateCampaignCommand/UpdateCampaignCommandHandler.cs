@@ -25,10 +25,11 @@ namespace Ads.Application.Campaigns.Commands.UpdateCampaignCommand
                 //existingCampaign.Description = request.Description ?? existingCampaign.Description;
                 existingCampaign.StartDate = request.StartDate ;
                 existingCampaign.EndDate = request.EndDate;
-                //existingCampaign.Budget = request.Budget;
+               // existingCampaign.Budget = request.Budget;
                 existingCampaign.Status = request.Status;
                 existingCampaign.BudgetId = request.BudgetId ?? existingCampaign.BudgetId;
-                existingCampaign.Ads = request.Ads;
+                existingCampaign.SellerId = request.SellerId ?? existingCampaign.SellerId;
+                //existingCampaign.Ads = request.Ads;
                 await _repository.UpdateAsync(request.Id, existingCampaign, cancellationToken);
 
                 return existingCampaign;

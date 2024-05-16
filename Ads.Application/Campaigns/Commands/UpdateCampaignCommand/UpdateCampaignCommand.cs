@@ -8,12 +8,14 @@ namespace Ads.Application.Campaigns.Commands.UpdateCampaignCommand
     (
         string Id,
         string Name,
-       //string Description,
-        DateTime StartDate,
-        DateTime EndDate,
+        //string Description,
+        DateTimeOffset StartDate,
+        DateTimeOffset EndDate,
         //double Budget,
+        int Impressions,
+        string SellerId,
         Status Status,
-        List<string>? Ads,
+        //List<string>? Ads,
         string? BudgetId
     ) : IRequest<CampaignEntity>;
 }

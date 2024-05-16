@@ -24,6 +24,7 @@ namespace Ads.Application.Ads.Commands.UpdateAdCommand
 
                 existingAd.Name = request.Name ?? existingAd.Name;
                 existingAd.CampaignId = request.CampaignId ?? existingAd.CampaignId;
+                existingAd.CreditId = request.CreditId ?? existingAd.CreditId;
                 await _repository.UpdateAsync(request.Id, existingAd, cancellationToken);
 
                 return existingAd;

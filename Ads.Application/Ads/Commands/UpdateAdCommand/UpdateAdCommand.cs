@@ -7,8 +7,9 @@ namespace Ads.Application.Ads.Commands.UpdateAdCommand
         (
             string Id,
             string Name,
-            DateTime StartDate,
-            DateTime EndDate,
-            string CampaignId
+            DateTimeOffset StartDate,
+            DateTimeOffset EndDate,
+            string CampaignId,
+            string CreditId
         ) : IRequest<AdEntity>;
 }
