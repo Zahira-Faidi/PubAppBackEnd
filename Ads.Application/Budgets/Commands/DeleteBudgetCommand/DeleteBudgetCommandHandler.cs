@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Ads.Application.Budgets.Commands.DeleteBudgetCommand
 {
-    public class DeleteBudgetCommandHandler : IRequestHandler<DeleteBudgetCommand, BudgetEntity>
+    public class DeleteBudgetCommandHandler : IRequestHandler<DeleteBudgetCommand, Unit>
     {
         private readonly IBudgetRepository _repository;
         public DeleteBudgetCommandHandler(IBudgetRepository repository)
@@ -12,14 +12,14 @@ namespace Ads.Application.Budgets.Commands.DeleteBudgetCommand
             _repository = repository;
         }
 
-        public async Task<BudgetEntity> Handle(DeleteBudgetCommand request, CancellationToken cancellationToken)
+        public async Task<Unit> Handle(DeleteBudgetCommand request, CancellationToken cancellationToken)
         {
             var budgetToDelete = await _repository.GetDetailsAsync(request.Id, cancellationToken);
             if (budgetToDelete == null)
                 throw new Exception($"Budget with ID {request.Id} not found.");
             else
                 await _repository.DeleteAsync(request.Id, cancellationToken);
-            return budgetToDelete;
+            return Unit.Value;
         }
     }
 }

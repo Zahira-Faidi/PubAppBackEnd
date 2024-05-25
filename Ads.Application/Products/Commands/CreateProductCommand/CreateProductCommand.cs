@@ -9,7 +9,8 @@ namespace Ads.Application.Products.Commands.CreateProductCommand
         double Price,
         int Quantity,
         int cpc,
-        string CategoryId
+        string CategoryId,
+        string AdId
         ) : IRequest<ProductEntity>;
 
 }

@@ -5,6 +5,6 @@ namespace Ads.Application.Common.Interfaces
 {
     public interface IProductRepository : IBaseRepository<ProductEntity>
     { 
-
+        Task<List<ProductEntity>> GetAllProductsByAdId(string adId, CancellationToken cancellationToken);
     }
 }

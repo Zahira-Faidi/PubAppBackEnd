@@ -1,5 +1,6 @@
 ﻿using Ads.Application.Common.Interfaces;
 using Ads.Domain.Entities;
+using Ads.Domain.Enums;
 using AutoMapper;
 using MediatR;
 
@@ -18,6 +19,7 @@ namespace Ads.Application.Campaigns.Commands.CreateCampaignCommand
         public async Task<CampaignEntity> Handle(CreateCampaignCommand request, CancellationToken cancellationToken)
         {
             var campaign = _mapper.Map<CampaignEntity>(request);
+            campaign.Status = Status.Inactive;
             var result = await _repository.InsertAsync(campaign, cancellationToken);
             return result;
         }

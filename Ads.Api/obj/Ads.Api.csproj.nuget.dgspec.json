@@ -84,6 +84,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -181,6 +199,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -198,6 +230,317 @@
         "projectPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\Ads.Domain.csproj",
         "packagesPath": "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ZAHIRA.FAIDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Application\\Authentication.Application.csproj": {
+                "projectPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Application\\Authentication.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.IdentityModel.Protocols": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.24.0, )"
+            },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.5.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Infrastructure\\Ads.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Infrastructure\\Ads.Infrastructure.csproj",
+        "projectName": "Ads.Infrastructure",
+        "projectPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Infrastructure\\Ads.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ZAHIRA.FAIDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Ads.Application.csproj": {
+                "projectPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Ads.Application.csproj"
+              },
+              "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\Ads.Domain.csproj": {
+                "projectPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\Ads.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ErrorOr": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.24.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.24.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Application\\Authentication.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Application\\Authentication.Application.csproj",
+        "projectName": "Authentication.Application",
+        "projectPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Application\\Authentication.Application.csproj",
+        "packagesPath": "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ZAHIRA.FAIDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Domain\\Authentication.Domain.csproj": {
+                "projectPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Domain\\Authentication.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "ErrorOr": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Domain\\Authentication.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Domain\\Authentication.Domain.csproj",
+        "projectName": "Authentication.Domain",
+        "projectPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Domain\\Authentication.Domain.csproj",
+        "packagesPath": "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Authentication.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ZAHIRA.FAIDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -251,84 +594,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Infrastructure\\Ads.Infrastructure.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Infrastructure\\Ads.Infrastructure.csproj",
-        "projectName": "Ads.Infrastructure",
-        "projectPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Infrastructure\\Ads.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\ZAHIRA.FAIDI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Infrastructure\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\ZAHIRA.FAIDI\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Ads.Application.csproj": {
-                "projectPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Ads.Application.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.Extensions.DependencyInjection.Abstractions": {
-              "target": "Package",
-              "version": "[8.0.1, )"
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
             },
-            "Microsoft.Extensions.Options": {
-              "target": "Package",
-              "version": "[6.0.0, )"
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
             },
-            "MongoDB.Driver": {
-              "target": "Package",
-              "version": "[2.24.0, )"
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
             }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
           ],
-          "assetTargetFallback": true,
-          "warn": true,
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

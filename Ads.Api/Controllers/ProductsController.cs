@@ -1,7 +1,10 @@
 ﻿using Ads.Api.Common.Utils;
+using Ads.Application.Ads.Queries.GetAdsByCampaignIdQuery;
+using Ads.Application.Campaigns.Queries.GetCampaignByIdQuery;
 using Ads.Application.Products.Commands.CreateProductCommand;
 using Ads.Application.Products.Commands.DeleteProductCommand;
 using Ads.Application.Products.Commands.UpdateProductCommand;
+using Ads.Application.Products.Queries.GetAllProductsByAdIdQuery;
 using Ads.Application.Products.Queries.GetProductByIdQuery;
 using Ads.Application.Products.Queries.GetProductsQuery;
 using MediatR;
@@ -66,8 +69,34 @@ public class ProductController : ApiController
         {
             return BadRequest("Invalid id format");
         }
+        try
+        {
+            var command = new DeleteProductCommand(id);
+            await _mediator.Send(command, cancellationToken);
+            return Ok("Product deleted successfully");
+        }
+        catch (Exception ex)
+        {
+            return NotFound(ex.Message);
+        }
+    }
+    // GET Product By Id AD
+    [HttpGet("ad/{id}")]
+    public async Task<IActionResult> GetAllProductByAdId(string id, CancellationToken cancellationToken)
+    {
+        if (!ValidationUtils.IsValidId(id))
+        {
+            return BadRequest("Invalid ad ID format");
+        }
 
-        var command = new DeleteProductCommand(id);
-        return Ok(await _mediator.Send(command, cancellationToken));
+        var query = new GetAllProductsByAdIdQuery(id);
+        var result = await _mediator.Send(query, cancellationToken);
+
+        if (result == null)
+        {
+            return NotFound($"No ads found for ad with ID {id}");
+        }
+
+        return Ok(result);
     }
 }

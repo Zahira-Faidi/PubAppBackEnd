@@ -128,9 +128,15 @@ namespace Ads.Api.Controllers
             {
                 return BadRequest("Invalid id format");
             }
-
-            var command = new DeleteCampaignCommand(id);
-            return Ok(await _mediator.Send(command, cancellationToken));
+            try
+            {
+                await _mediator.Send(new DeleteCampaignCommand(id), cancellationToken);
+                return Ok("Campaign deleted successfully");
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
     }
 }

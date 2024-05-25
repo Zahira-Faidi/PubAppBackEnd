@@ -3,6 +3,7 @@ using Ads.Application.Ads.Commands.CreateAdCommand;
 using Ads.Application.Ads.Commands.DeleteAdCommand;
 using Ads.Application.Ads.Commands.UpdateAdCommand;
 using Ads.Application.Ads.Queries.GetAdByIdQuery;
+using Ads.Application.Ads.Queries.GetAdsByCampaignIdQuery;
 using Ads.Application.Ads.Queries.GetAdsQuery;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -64,8 +65,35 @@ namespace Ads.Api.Controllers
                 return BadRequest("Invalid id format");
             }
 
-            var command = new DeleteAdCommand(id);
-            return Ok(await _mediator.Send(command, cancellationToken));
+            try
+            {
+                var command = new DeleteAdCommand(id);
+                await _mediator.Send(command, cancellationToken);
+                return Ok("Ad deleted successfully");
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+        // GET ALL ADS BY CAMPAIGNID
+        [HttpGet("campaign/{campaignId}")]
+        public async Task<IActionResult> GetAllAdsByCampaignId(string campaignId, CancellationToken cancellationToken)
+        {
+            if (!ValidationUtils.IsValidId(campaignId))
+            {
+                return BadRequest("Invalid campaign ID format");
+            }
+
+            var query = new GetAdsByCampaignIdQuery(campaignId);
+            var result = await _mediator.Send(query, cancellationToken);
+
+            if (result == null)
+            {
+                return NotFound($"No campaigns found for campaign with ID {campaignId}");
+            }
+
+            return Ok(result);
         }
     }
 }

@@ -64,7 +64,7 @@ builder.Services.Configure<DataBaseSettings>(builder.Configuration.GetSection("M
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin",
-        builder => builder.WithOrigins("http://localhost:3000")
+        builder => builder.WithOrigins("http://localhost:3030")
                           .AllowAnyMethod()
                          .AllowAnyHeader());
 

@@ -31,7 +31,7 @@ namespace Ads.Application.Products.Commands.UpdateProductCommand
                 existingProduct.Quantity = request.Quantity != 0 ? request.Quantity : existingProduct.Quantity;
                 existingProduct.CPC = request.CPC != 0 ? request.CPC : existingProduct.CPC;
                 existingProduct.CategoryId = request.CategoryId ?? existingProduct.CategoryId;
-
+                existingProduct.AdId = request.AdId ?? existingProduct.AdId;
                 await _repository.UpdateAsync(request.Id, existingProduct, cancellationToken);
 
                 return existingProduct;

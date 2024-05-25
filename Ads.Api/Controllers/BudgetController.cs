@@ -66,8 +66,16 @@ namespace Ads.Api.Controllers
                 return BadRequest("Invalid id format");
             }
 
-            var command = new DeleteBudgetCommand(id);
-            return Ok(await _mediator.Send(command, cancellationToken));
+            try
+            {
+                var command = new DeleteBudgetCommand(id);
+                await _mediator.Send(command, cancellationToken);
+                return Ok("Budget deleted successfully");
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
     }
 }

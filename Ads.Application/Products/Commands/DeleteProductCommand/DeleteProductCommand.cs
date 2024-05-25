@@ -1,9 +1,8 @@
-﻿using Ads.Domain.Entities;
-using MediatR;
+﻿using MediatR;
 
 namespace Ads.Application.Products.Commands.DeleteProductCommand
 {
-    public class DeleteProductCommand : IRequest<ProductEntity>
+    public class DeleteProductCommand : IRequest<Unit>
     {
         public string ProductId { get; set; }
         public DeleteProductCommand(string productId)

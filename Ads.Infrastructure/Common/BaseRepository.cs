@@ -15,10 +15,11 @@ namespace Ads.Infrastructure.Common
             _collection = database.GetCollection<T>(collectionName);
 
         }
-        public async Task<T> DeleteAsync(string id, CancellationToken cancellationToken)
+        public async Task<bool> DeleteAsync(string id, CancellationToken cancellationToken)
         {
             var filter = Builders<T>.Filter.Eq("Id", id);
-            return await _collection.FindOneAndDeleteAsync(filter, cancellationToken: cancellationToken);
+            var result = await _collection.DeleteOneAsync(filter);
+            return result.DeletedCount> 0;
         }
 
         public async Task<List<T>> GetAllAsync(CancellationToken cancellationToken)

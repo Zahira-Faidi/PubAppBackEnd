@@ -8,6 +8,6 @@ namespace Ads.Application.Common.Base
         Task<T> GetDetailsAsync(string id, CancellationToken cancellationToken);
         Task<T> InsertAsync(T entity, CancellationToken cancellationToken);
         Task<T> UpdateAsync(string id, T entity, CancellationToken cancellationToken);
-        Task<T> DeleteAsync(string id, CancellationToken cancellationToken);
+        Task<bool> DeleteAsync(string id, CancellationToken cancellationToken);
     }
 }

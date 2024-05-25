@@ -22,17 +22,16 @@ namespace Ads.Application.Budgets.Commands.UpdateBudgetCommand
                 {
                     throw new Exception($"Budget with id {request.Id} not found");
                 }
-
                 if (existingBudget.TotalBudget == 0)
                     existingBudget.TotalBudget = existingBudget.TotalBudget;
                 else
                     existingBudget.TotalBudget = request.TotalBudget;
-                if (existingBudget.DailyBudget == 0)
-                    existingBudget.DailyBudget = existingBudget.DailyBudget;
+                if (existingBudget.Consumed == 0)
+                    existingBudget.Consumed = existingBudget.Consumed;
                 else
-                    existingBudget.DailyBudget = request.DailyBudget;
+                    existingBudget.Consumed = request.Consumed;
 
-                //existingBudget.Campaigns = request.Campaigns; // Update campaigns list if needed
+                //existingBudget.Name = request.Name; 
 
                 await _repository.UpdateAsync(request.Id , existingBudget, cancellationToken);
 

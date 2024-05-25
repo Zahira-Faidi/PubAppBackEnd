@@ -6,12 +6,11 @@ namespace Ads.Application.Products.Commands.UpdateProductCommand
     public record UpdateProductCommand (
         string Id,
         string? Name,
-        //string? Description,
         string Image,
         double Price,
         int Quantity,
         int CPC,
-        string CategoryId
-        //string PromotionId
+        string CategoryId,
+        string AdId
         ) : IRequest<ProductEntity>;
 }

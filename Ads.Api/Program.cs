@@ -24,7 +24,14 @@ builder.Services.AddInfrastractureConfiguration();
 builder.Services.AddApplicationConfiguration();
 builder.Services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddHttpClient();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder => builder.WithOrigins("http://localhost:3030")
+                          .AllowAnyMethod()
+                         .AllowAnyHeader());
 
+});
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -36,6 +43,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+app.UseCors("AllowSpecificOrigin");
 
 app.MapControllers();
 

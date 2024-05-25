@@ -8,6 +8,6 @@ public class BudgetEntity: BaseEntity
 {
     [BsonElement("totalbudget")]
     public double TotalBudget { get; set; }
-    [BsonElement("dailyBudget")]
-    public double DailyBudget { get; set; }
+    [BsonElement("consumed")]
+    public double Consumed { get; set; } = 0;
 }

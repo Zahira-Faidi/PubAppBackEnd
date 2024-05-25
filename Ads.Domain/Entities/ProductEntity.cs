@@ -19,4 +19,7 @@ public class ProductEntity : BaseEntity
     [BsonElement("category")]
     [BsonRepresentation(BsonType.ObjectId)]
     public string? CategoryId { get; set; }
+    [BsonElement("ad")]
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string? AdId { get; set; }
 }

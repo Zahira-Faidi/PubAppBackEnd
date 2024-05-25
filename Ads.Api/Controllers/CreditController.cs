@@ -61,8 +61,16 @@ namespace Ads.Api.Controllers
                 return BadRequest("Invalid id format");
             }
 
-            var command = new DeleteCreditCommand(id);
-            return Ok(await _mediator.Send(command, cancellationToken));
+            try
+            {
+                var command = new DeleteCreditCommand(id);
+                await _mediator.Send(command, cancellationToken);
+                return Ok("Credit deleted successfully");
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
     }
 }
