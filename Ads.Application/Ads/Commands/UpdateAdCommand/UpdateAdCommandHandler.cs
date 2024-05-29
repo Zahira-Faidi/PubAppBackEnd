@@ -24,7 +24,10 @@ namespace Ads.Application.Ads.Commands.UpdateAdCommand
 
                 existingAd.Name = request.Name ?? existingAd.Name;
                 existingAd.CampaignId = request.CampaignId ?? existingAd.CampaignId;
-                existingAd.CreditId = request.CreditId ?? existingAd.CreditId;
+                existingAd.StartDate = request.StartDate;
+                existingAd.EndDate = request.EndDate;
+                existingAd.Credit = request.Credit !=0 ? request.Credit : existingAd.Credit;
+                existingAd.Consumed = request.Consumed != 0 ? request.Consumed : existingAd.Consumed;
                 await _repository.UpdateAsync(request.Id, existingAd, cancellationToken);
 
                 return existingAd;

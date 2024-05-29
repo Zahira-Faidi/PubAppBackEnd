@@ -63,7 +63,7 @@ public class UserController : ApiController
     [AllowAnonymous]
     public async Task<IActionResult> UpdateUser(string id, UpdateUserRequest request)
     {
-        var command = new UpdateUserCommand(id, request.FirstName, request.LastName);
+        var command = new UpdateUserCommand(id, request.FirstName, request.LastName, request.Image , request.Status);
         ErrorOr<UserResult> result = await _mediator.Send(command);
 
         return result.Match(

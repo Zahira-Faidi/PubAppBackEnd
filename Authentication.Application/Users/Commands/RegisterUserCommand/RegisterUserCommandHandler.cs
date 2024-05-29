@@ -31,9 +31,11 @@ public class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand,Er
             request.FirstName,
             request.LastName,
             request.Email,
+            request.Image,
             request.Role,
             _passwordHasher.HashPassword(request.Password)
-        );
+        ); 
+
         await _userRepository.AddAsync(user);
         var token = _jwtTokenGenerator.GenerateToken(user);
         return new AuthenticationResult(user, token);

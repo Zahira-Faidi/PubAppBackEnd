@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "hVf8E5Ui5ll3qLU+TleD//x2hYHAS9FPC3oofjzXb70=",
+  "Hash": "SVzniqxwz0QWc7BIjVFnQyFhFJGiKFyuSF+MsVfr8Bk=",
   "Source": "Ads.Api",
   "BasePath": "_content/Ads.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Ads.Api\\wwwroot",
+      "Source": "Ads.Api",
+      "ContentRoot": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Api\\wwwroot\\",
+      "BasePath": "_content/Ads.Api",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

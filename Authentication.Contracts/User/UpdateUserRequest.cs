@@ -3,5 +3,7 @@
 public record UpdateUserRequest
 (
     string FirstName,
-    string LastName
+    string LastName,
+    string Status,
+    string Image
 );

@@ -1,6 +1,6 @@
 ﻿namespace Authentication.Domain.common.Enums;
-public enum Status
+public static class Status
 {
-    Inactive,
-    Active
+    public const string Banned = "Banned";
+    public const string Active = "Active";
 }

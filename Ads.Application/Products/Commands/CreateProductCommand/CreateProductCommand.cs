@@ -5,12 +5,10 @@ namespace Ads.Application.Products.Commands.CreateProductCommand
 {
     public record CreateProductCommand(
         string Name,
-        string Image,
+        string Image, // This should be a string
         double Price,
         int Quantity,
-        int cpc,
         string CategoryId,
         string AdId
-        ) : IRequest<ProductEntity>;
-
+    ) : IRequest<ProductEntity>;
 }

@@ -13,7 +13,6 @@ namespace Ads.Infrastructure.Extensions
             services.AddTransient<ICampaignRepository, CampaignRepository> ();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<IAdRepository, AdRepository>();
-            services.AddTransient<ICreditRepository, CreditRepository>();
 
             return services;
         }

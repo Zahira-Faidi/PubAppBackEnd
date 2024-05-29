@@ -1,5 +1,6 @@
 ﻿using Ads.Domain.Entities;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 
 namespace Ads.Application.Products.Commands.UpdateProductCommand
 {
@@ -9,7 +10,7 @@ namespace Ads.Application.Products.Commands.UpdateProductCommand
         string Image,
         double Price,
         int Quantity,
-        int CPC,
+        //int CPC,
         string CategoryId,
         string AdId
         ) : IRequest<ProductEntity>;

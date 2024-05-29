@@ -19,4 +19,8 @@
     <ProjectReference Include="..\Ads.Infrastructure\Ads.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 </Project>

@@ -6,6 +6,8 @@ namespace Ads.Application.Ads.Queries.GetAdsByCampaignIdQuery;
 public class GetAdsByCampaignIdQuery : IRequest<List<AdEntity>>
 {
     public string CampaignId { get; set; }
+    public bool IsDeleted { get; set; }
+
     public GetAdsByCampaignIdQuery(string campaignId)
     {
         CampaignId = campaignId;

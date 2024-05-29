@@ -13,6 +13,15 @@ public class GetAdsByCampaignIdQueryHandler : IRequestHandler<GetAdsByCampaignId
     }
     public async Task<List<AdEntity>> Handle(GetAdsByCampaignIdQuery request, CancellationToken cancellationToken)
     {
-        return await _adRepository.GetAllAdsByCampaignId(request.CampaignId, cancellationToken);
+        var oldList = await _adRepository.GetAllAdsByCampaignId(request.CampaignId, cancellationToken);
+        List<AdEntity> ads = new List<AdEntity>();
+        foreach (var old in oldList)
+        {
+            if(old.IsDeleted == false)
+            {
+                ads.Add(old);
+            }
+        }
+        return ads;
     }
 }

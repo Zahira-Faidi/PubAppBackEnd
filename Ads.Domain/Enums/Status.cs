@@ -3,6 +3,7 @@
     public enum Status
     {
         Inactive,
-        Active
+        Active,
+        InDraft
     }
 }

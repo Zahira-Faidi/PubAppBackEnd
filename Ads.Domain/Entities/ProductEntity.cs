@@ -1,6 +1,7 @@
 ﻿using Ads.Domain.Common.Entities;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
+using Microsoft.AspNetCore.Http;
 
 namespace Ads.Domain.Entities;
 
@@ -15,7 +16,7 @@ public class ProductEntity : BaseEntity
     [BsonElement("quantity")]
     public int Quantity { get; set; }
     [BsonElement("cpc")]
-    public int CPC { get; set; }
+    public int CPC { get; set; } = 0;
     [BsonElement("category")]
     [BsonRepresentation(BsonType.ObjectId)]
     public string? CategoryId { get; set; }

@@ -3,5 +3,8 @@ using MediatR;
 
 namespace Ads.Application.Ads.Queries.GetAdsQuery
 {
-    public record GetAdsQuery : IRequest<List<AdEntity>>;
+    public class GetAdsQuery : IRequest<List<AdEntity>>
+    {
+        public bool IsDeleted { get; set; }
+    }
 }

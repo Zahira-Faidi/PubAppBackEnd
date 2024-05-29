@@ -19,7 +19,7 @@ namespace Ads.Application.Campaigns.Commands.CreateCampaignCommand
         public async Task<CampaignEntity> Handle(CreateCampaignCommand request, CancellationToken cancellationToken)
         {
             var campaign = _mapper.Map<CampaignEntity>(request);
-            campaign.Status = Status.Inactive;
+            campaign.Status = Status.InDraft;
             var result = await _repository.InsertAsync(campaign, cancellationToken);
             return result;
         }

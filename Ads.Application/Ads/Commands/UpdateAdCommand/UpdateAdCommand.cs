@@ -10,6 +10,7 @@ namespace Ads.Application.Ads.Commands.UpdateAdCommand
             DateTimeOffset StartDate,
             DateTimeOffset EndDate,
             string CampaignId,
-            string CreditId
+            double Credit,
+            double Consumed
         ) : IRequest<AdEntity>;
 }

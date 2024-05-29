@@ -17,6 +17,11 @@ public class AdEntity : BaseEntity
     [BsonElement("campaignId")] 
     [BsonRepresentation(BsonType.ObjectId)]
     public string? CampaignId { get; set; }
-    [BsonElement("creditId")]
-    public string? CreditId { get; set; }
+    [BsonElement("credit")]
+    public double Credit { get; set; } = 0; 
+    [BsonElement("consumed")]
+    public double Consumed { get; set; } = 0;
+    [BsonElement("isDeleted")]
+    public bool IsDeleted { get; set; } = false;
+
 }

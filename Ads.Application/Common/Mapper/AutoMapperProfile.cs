@@ -2,7 +2,6 @@
 using Ads.Application.Budgets.Commands.CreateBudgetCommand;
 using Ads.Application.Campaigns.Commands.CreateCampaignCommand;
 using Ads.Application.Categories.Commands.CreateCategoryCommand;
-using Ads.Application.Credits.Commands.CreateCreditCommand;
 using Ads.Application.Products.Commands.CreateProductCommand;
 using Ads.Domain.Entities;
 using AutoMapper;
@@ -27,9 +26,6 @@ namespace Ads.Application.Common.Mapper
 
             // Mapping pour Product
             CreateMap<CreateProductCommand, ProductEntity>().ReverseMap();
-
-            // Mapping pour Promotion
-            CreateMap<CreateCreditCommand, CreditEntity>().ReverseMap();
 
         }
     }

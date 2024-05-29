@@ -1,8 +1,13 @@
 ﻿using Authentication.Application.Common.Interfaces.Persistence;
 using Authentication.Application.Users.Common;
+using Authentication.Domain.Entities;
 using Authentication.Domain.common;
 using ErrorOr;
 using MediatR;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Authentication.Application.Users.Queries.GetAllUsersQuery;
 
@@ -18,11 +23,13 @@ public class GetAllUsersQueryHandler : IRequestHandler<GetAllUsersQuery, ErrorOr
     public async Task<ErrorOr<List<UserResult>>> Handle(GetAllUsersQuery request, CancellationToken cancellationToken)
     {
         var users = await _userRepository.GetUsersAsync();
-        var userResult = users.Select(u => new UserResult(u.Id, u.FirstName, u.LastName, u.Email, u.Role, u.CreatedDateTime, u.UpdatedDateTime)).ToList();
+        var userResults = users.Select(u => u.ToUserResult()).ToList();
 
-        if (userResult.Count == 0) return Errors.User.UserNotFound;
+        if (!userResults.Any())
+        {
+            return Errors.User.UserNotFound;
+        }
 
-        return userResult;
-
+        return userResults;
     }
 }

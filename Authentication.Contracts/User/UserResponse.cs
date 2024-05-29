@@ -6,5 +6,7 @@ public record UserResponse
     string FirstName,
     string LastName,
     string Email,
-    string Role
+    string Role,
+    string Image,
+    string Status
 );

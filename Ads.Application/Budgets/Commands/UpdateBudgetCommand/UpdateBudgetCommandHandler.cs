@@ -31,7 +31,7 @@ namespace Ads.Application.Budgets.Commands.UpdateBudgetCommand
                 else
                     existingBudget.Consumed = request.Consumed;
 
-                //existingBudget.Name = request.Name; 
+                existingBudget.Name = request.Name ?? existingBudget.Name; 
 
                 await _repository.UpdateAsync(request.Id , existingBudget, cancellationToken);
 

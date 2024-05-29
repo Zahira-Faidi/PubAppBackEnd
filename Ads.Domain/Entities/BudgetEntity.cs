@@ -6,6 +6,9 @@ namespace Ads.Domain.Entities;
 
 public class BudgetEntity: BaseEntity
 {
+    [BsonElement("name")]
+    public string? Name { get; set; }
+
     [BsonElement("totalbudget")]
     public double TotalBudget { get; set; }
     [BsonElement("consumed")]

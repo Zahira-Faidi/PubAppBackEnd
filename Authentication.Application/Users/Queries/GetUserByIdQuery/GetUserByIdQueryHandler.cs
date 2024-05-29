@@ -26,6 +26,7 @@ public class GetUserByIdQueryHandler : IRequestHandler<GetUserByIdQuery, ErrorOr
         {
             return Errors.User.IdNotFound;
         }
-        return new UserResult(user.Id, user.FirstName, user.LastName, user.Email, user.Role, user.CreatedDateTime, user.UpdatedDateTime);
+        var userResult = user.ToUserResult();
+        return userResult;
     }
 }

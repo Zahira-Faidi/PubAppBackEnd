@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ads.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ada381206b5b80d451761eb1c052d6ec89116e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f7c5ea3c3976bc72ea64c774642da7b1da2718c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ads.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ads.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
