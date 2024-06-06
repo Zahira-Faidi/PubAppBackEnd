@@ -1,6 +1,4 @@
 ﻿using Ads.Api.Common.Utils;
-using Ads.Application.Ads.Queries.GetAdsByCampaignIdQuery;
-using Ads.Application.Campaigns.Queries.GetCampaignByIdQuery;
 using Ads.Application.Products.Commands.CreateProductCommand;
 using Ads.Application.Products.Commands.DeleteProductCommand;
 using Ads.Application.Products.Commands.UpdateProductCommand;
@@ -13,7 +11,7 @@ namespace Ads.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class ProductController : ApiController
+public class ProductController : ControllerBase
 {
     private readonly IMediator _mediator;
 

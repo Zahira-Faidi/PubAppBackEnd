@@ -1,54 +1,19 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{EC64C38D-AE51-464C-9696-9975FE09ADD2}|Ads.Infrastructure\\Ads.Infrastructure.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.infrastructure\\extensions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC64C38D-AE51-464C-9696-9975FE09ADD2}|Ads.Infrastructure\\Ads.Infrastructure.csproj|solutionrelative:ads.infrastructure\\extensions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4359008-FF4B-4E4E-9536-E2F55525E575}|Ads.Application\\Ads.Application.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.application\\common\\mapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4359008-FF4B-4E4E-9536-E2F55525E575}|Ads.Application\\Ads.Application.csproj|solutionrelative:ads.application\\common\\mapper\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 1052,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 786,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Infrastructure\\Extensions\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Ads.Infrastructure\\Extensions\\DependencyInjection.cs",
-              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Infrastructure\\Extensions\\DependencyInjection.cs",
-              "RelativeToolTip": "Ads.Infrastructure\\Extensions\\DependencyInjection.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAnwBMAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T13:47:08.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Common\\Mapper\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "Ads.Application\\Common\\Mapper\\AutoMapperProfile.cs",
-              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Common\\Mapper\\AutoMapperProfile.cs",
-              "RelativeToolTip": "Ads.Application\\Common\\Mapper\\AutoMapperProfile.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwBsAAABKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T13:46:53.293Z",
-              "EditorCaption": ""
             }
           ]
         }

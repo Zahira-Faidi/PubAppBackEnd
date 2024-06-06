@@ -1,6 +1,6 @@
-﻿using Ads.Application.Ads.Commands.CreateAdCommand;
-using Ads.Application.Budgets.Commands.CreateBudgetCommand;
-using Ads.Application.Campaigns.Commands.CreateCampaignCommand;
+﻿using Ads.Application.Ads.Commands.CreateAd;
+using Ads.Application.Budgets.Commands.CreateBudget;
+using Ads.Application.Campaigns.Commands.CreateCampaign;
 using Ads.Application.Categories.Commands.CreateCategoryCommand;
 using Ads.Application.Products.Commands.CreateProductCommand;
 using Ads.Domain.Entities;

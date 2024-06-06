@@ -1,16 +1,15 @@
 ﻿using Ads.Api.Common.Utils;
-using Ads.Application.Campaigns.Commands.ActivateCampaignCommand;
-using Ads.Application.Campaigns.Commands.CreateCampaignCommand;
-using Ads.Application.Campaigns.Commands.DeleteCampaignCommand;
+using Ads.Application.Campaigns.Commands.ActivateCampaign;
+using Ads.Application.Campaigns.Commands.CreateCampaign;
+using Ads.Application.Campaigns.Commands.DeleteCampaign;
 using Ads.Application.Campaigns.Commands.DesactiverCampaignCommand;
 using Ads.Application.Campaigns.Commands.UpdateCampaignCommand;
 using Ads.Application.Campaigns.Queries.GetCampaignByIdQuery;
 using Ads.Application.Campaigns.Queries.GetCampaignByIdSellerQuery;
 using Ads.Application.Campaigns.Queries.GetCampaignsQuery;
-using Ads.Domain.Enums;
+using Ads.Application.Common.Exceptions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading;
 
 namespace Ads.Api.Controllers
 {
@@ -28,39 +27,53 @@ namespace Ads.Api.Controllers
         [HttpPost("activate/{campaignId}")]
         public async Task<IActionResult> ActivateCampaign(string campaignId , CancellationToken cancellationToken)
         {
-            var campaign = new GetCampaignByIdQuery(campaignId);
-            var result = await _mediator.Send(campaign, cancellationToken);
-            var command = new ActivateCampaignCommand(campaignId, result.Status);
-            
-            var res = await _mediator.Send(command);
+            try
+            {
+                var campaign = new GetCampaignByIdQuery(campaignId);
+                var result = await _mediator.Send(campaign, cancellationToken);
+                var command = new ActivateCampaignCommand(campaignId, result.Status);
 
-            if (res)
-            {
-                return Ok("Campaign activated successfully.");
+                var res = await _mediator.Send(command);
+                if (res)
+                {
+                    return Ok("Campaign activated successfully.");
+                }
+                else
+                {
+                    return BadRequest("Failed to activate campaign.");
+                }
             }
-            else
+            catch (CampaignNotFoundException ex)
             {
-                return BadRequest("Failed to activate campaign.");
+                return NotFound(ex.Message);  
             }
+
         }
         // START DESACTIVATE CAMAPAIGN 
        
         [HttpPost("desactivate/{campaignId}")]
         public async Task<IActionResult> DesactivateCampaign(string campaignId, CancellationToken cancellationToken)
         {
-            var campaign = new GetCampaignByIdQuery(campaignId);
-            var result = await _mediator.Send(campaign, cancellationToken);
-            var command = new DesactiverCampaignCommand(campaignId, result.Status);
-            var res = await _mediator.Send(command);
+            try
+            {
+                var campaign = new GetCampaignByIdQuery(campaignId);
+                var result = await _mediator.Send(campaign, cancellationToken);
+                var command = new DesactiverCampaignCommand(campaignId, result.Status);
+                var res = await _mediator.Send(command);
+                if (res)
+                {
+                    return Ok("Campaign desactivated successfully.");
+                }
+                else
+                {
+                    return BadRequest("Failed to desactivated campaign.");
+                }
+            }
+            catch (CampaignNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
 
-            if (res)
-            {
-                return Ok("Campaign desactivated successfully.");
-            }
-            else
-            {
-                return BadRequest("Failed to desactivated campaign.");
-            }
         }
         // START GET CAMPAIGN BY ID SELLER
         [HttpGet("seller/{sellerId}")]

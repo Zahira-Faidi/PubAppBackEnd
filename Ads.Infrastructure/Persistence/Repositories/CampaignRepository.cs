@@ -18,7 +18,7 @@ namespace Ads.Infrastructure.Persistence.Repositories
         public async Task<bool> ActivateCampaign(string id, Status status, CancellationToken cancellationToken)
         {
             var campaign = await GetDetailsAsync(id, cancellationToken);
-            if(campaign.Status == Status.Inactive)
+            if(campaign.Status == Status.Inactive || campaign.Status == Status.InDraft)
             {
                 campaign.Status = Status.Active;
             }

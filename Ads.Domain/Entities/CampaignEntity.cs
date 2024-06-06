@@ -26,4 +26,6 @@ public class CampaignEntity : BaseEntity
     [BsonElement("budget")]
     [BsonRepresentation(BsonType.ObjectId)]
     public string? BudgetId { get; set; }
+    [BsonElement("consumed")]
+    public double Consumed { get; set; } = 0;
 }

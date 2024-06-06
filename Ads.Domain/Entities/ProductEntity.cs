@@ -17,6 +17,8 @@ public class ProductEntity : BaseEntity
     public int Quantity { get; set; }
     [BsonElement("cpc")]
     public int CPC { get; set; } = 0;
+    [BsonElement("click")]
+    public int Click { get; set; } = 0;
     [BsonElement("category")]
     [BsonRepresentation(BsonType.ObjectId)]
     public string? CategoryId { get; set; }

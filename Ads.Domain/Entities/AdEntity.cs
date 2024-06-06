@@ -23,5 +23,8 @@ public class AdEntity : BaseEntity
     public double Consumed { get; set; } = 0;
     [BsonElement("isDeleted")]
     public bool IsDeleted { get; set; } = false;
+    // la somme des clicks des produits d'une même annonce
+    [BsonElement("impressions")]
+    public int Impressions { get; set; } = 0;
 
 }

@@ -1,9 +1,10 @@
 ﻿using Ads.Api.Common.Utils;
-using Ads.Application.Budgets.Commands.CreateBudgetCommand;
-using Ads.Application.Budgets.Commands.DeleteBudgetCommand;
+using Ads.Application.Budgets.Commands.CreateBudget;
+using Ads.Application.Budgets.Commands.DeleteBudget;
 using Ads.Application.Budgets.Commands.UpdateBudgetCommand;
-using Ads.Application.Budgets.Queries.GetBudgetByIdQuery;
-using Ads.Application.Budgets.Queries.GetBudgetsQuery;
+using Ads.Application.Budgets.Queries.GetBudgetById;
+using Ads.Application.Budgets.Queries.GetBudgets;
+using Ads.Application.Common.Exceptions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -35,10 +36,20 @@ namespace Ads.Api.Controllers
             {
                 return BadRequest("Invalid id format");
             }
-
-            var query = new GetBudgetByIdQuery(id);
-            var result = await _mediator.Send(query, cancellationToken);
-            return Ok(result);
+            try
+            {
+                var query = new GetBudgetByIdQuery(id);
+                var result = await _mediator.Send(query, cancellationToken);
+                return Ok(result);
+            }
+            catch (BudgetNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An unexpected error occurred " + ex.Message);
+            }
         }
 
         [HttpPost]
@@ -55,7 +66,19 @@ namespace Ads.Api.Controllers
             {
                 return BadRequest("Invalid id format");
             }
-            return Ok(await _mediator.Send(command, cancellationToken));
+            try
+            {
+                return Ok(await _mediator.Send(command, cancellationToken));
+
+            }
+            catch (BudgetNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An unexpected error occurred " + ex.Message);
+            }
         }
 
         [HttpDelete("{id}")]
@@ -72,9 +95,13 @@ namespace Ads.Api.Controllers
                 await _mediator.Send(command, cancellationToken);
                 return Ok("Budget deleted successfully");
             }
-            catch (Exception ex)
+            catch (BudgetNotFoundException ex)
             {
                 return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An unexpected error occurred " + ex.Message);
             }
         }
     }

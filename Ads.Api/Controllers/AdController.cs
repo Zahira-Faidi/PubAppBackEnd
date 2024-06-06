@@ -1,12 +1,13 @@
 ﻿using Ads.Api.Common.Utils;
-using Ads.Application.Ads.Commands.CreateAdCommand;
-using Ads.Application.Ads.Commands.DeleteAdCommand;
-using Ads.Application.Ads.Commands.UpdateAdCommand;
-using Ads.Application.Ads.Queries.GetAdByIdQuery;
-using Ads.Application.Ads.Queries.GetAdsByCampaignIdQuery;
-using Ads.Application.Ads.Queries.GetAdsQuery;
+using Ads.Application.Ads.Commands.CreateAd;
+using Ads.Application.Ads.Commands.DeleteAd;
+using Ads.Application.Ads.Commands.UpdateAd;
+using Ads.Application.Ads.Queries.GetAdById;
+using Ads.Application.Ads.Queries.GetAdsByCampaignId;
+using Ads.Application.Ads.Queries.GetAds;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Ads.Application.Common.Exceptions;
 
 namespace Ads.Api.Controllers
 {
@@ -35,16 +36,36 @@ namespace Ads.Api.Controllers
                 return BadRequest("Invalid id format");
             }
 
-            var query = new GetAdByIdQuery(id);
-            var result = await _mediator.Send(query, cancellationToken);
-            return Ok(result);
+            try
+            {
+                var query = new GetAdByIdQuery(id);
+                var result = await _mediator.Send(query, cancellationToken);
+                return Ok(result);
+            }
+            catch (AdNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An unexpected error occurred "+ex.Message);
+            }
         }
+
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateAdCommand command, CancellationToken cancellationToken)
         {
-            var result = await _mediator.Send(command, cancellationToken);
-            return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
+            try
+            {
+                var result = await _mediator.Send(command, cancellationToken);
+                return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
+            }
+            catch(BudgetExceededException ex)
+            {
+                return NotFound(ex.Message);
+            }
+
         }
 
         [HttpPut]
@@ -54,7 +75,20 @@ namespace Ads.Api.Controllers
             {
                 return BadRequest("Invalid id format");
             }
-            return Ok(await _mediator.Send(command, cancellationToken));
+            try
+            {
+                return Ok(await _mediator.Send(command, cancellationToken));
+
+            }
+            catch (AdNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An unexpected error occurred " + ex.Message);
+            }
         }
 
         [HttpDelete("{id}")]
@@ -64,19 +98,22 @@ namespace Ads.Api.Controllers
             {
                 return BadRequest("Invalid id format");
             }
-
             try
             {
                 var command = new DeleteAdCommand(id);
                 await _mediator.Send(command, cancellationToken);
                 return Ok("Ad deleted successfully");
             }
-            catch (Exception ex)
+            catch (AdNotFoundException ex)
             {
                 return NotFound(ex.Message);
             }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "An unexpected error occurred " + ex.Message);
+            }
         }
-        // GET ALL ADS BY CAMPAIGNID
+
         [HttpGet("campaign/{campaignId}")]
         public async Task<IActionResult> GetAllAdsByCampaignId(string campaignId, CancellationToken cancellationToken)
         {
@@ -84,16 +121,23 @@ namespace Ads.Api.Controllers
             {
                 return BadRequest("Invalid campaign ID format");
             }
-
-            var query = new GetAdsByCampaignIdQuery(campaignId);
-            var result = await _mediator.Send(query, cancellationToken);
-
-            if (result == null)
+            try
             {
-                return NotFound($"No campaigns found for campaign with ID {campaignId}");
+                var query = new GetAdsByCampaignIdQuery(campaignId);
+                var result = await _mediator.Send(query, cancellationToken);
+
+                if (result == null)
+                {
+                    return NotFound($"No campaigns found for campaign with ID {campaignId}");
+                }
+
+                return Ok(result);
+            }
+            catch(CampaignNotFoundException ex)
+            {
+                return BadRequest(ex.Message);
             }
 
-            return Ok(result);
         }
     }
 }
