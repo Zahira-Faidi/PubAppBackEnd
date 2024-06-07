@@ -7,8 +7,6 @@ namespace Ads.Application.Budgets.Commands.UpdateBudgetCommand
         (
             string Id,
             string Name,
-            double TotalBudget,
-            //double DailyBudget
-            double Consumed
+            double TotalBudget
         ) : IRequest<BudgetEntity>;
 }

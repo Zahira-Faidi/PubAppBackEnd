@@ -15,7 +15,7 @@ namespace Ads.Application.Categories.Commands.DeleteCategoryCommand
         {
             var categoryToDelete = await _repository.GetDetailsAsync(request.Id, cancellationToken);
             if (categoryToDelete == null)
-                throw new Exception($"Category with ID {request.Id} not found.");
+                throw new InvalidOperationException($"Category with ID {request.Id} not found.");
             else
                 await _repository.DeleteAsync(request.Id, cancellationToken);
             return Unit.Value;

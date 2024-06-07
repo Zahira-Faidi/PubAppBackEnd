@@ -3,6 +3,8 @@ using Ads.Domain.Common.Errors;
 using Ads.Domain.Entities;
 using ErrorOr;
 using MediatR;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Ads.Application.Products.Queries.GetProductByIdQuery
 {
@@ -17,9 +19,19 @@ namespace Ads.Application.Products.Queries.GetProductByIdQuery
 
         public async Task<ErrorOr<ProductEntity>> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
         {
-            var id = request.Id;
-            if (id == null) return Errors.Global.IdNotFound;
-            return await _repository.GetDetailsAsync(id, cancellationToken);
+            if (string.IsNullOrEmpty(request.Id))
+            {
+                return Errors.Global.IdNotFound;
+            }
+
+            var product = await _repository.GetDetailsAsync(request.Id, cancellationToken);
+
+            if (product == null)
+            {
+                return Errors.Global.IdNotFound;
+            }
+
+            return product;
         }
     }
 }

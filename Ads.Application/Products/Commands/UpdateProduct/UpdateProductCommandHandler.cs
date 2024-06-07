@@ -30,9 +30,20 @@ namespace Ads.Application.Products.Commands.UpdateProductCommand
                 existingProduct.Price = request.Price != 0 ? request.Price : existingProduct.Price;
                 existingProduct.Quantity = request.Quantity != 0 ? request.Quantity : existingProduct.Quantity;
                 existingProduct.CPC = request.CPC != 0 ? request.CPC : existingProduct.CPC;
-                existingProduct.Click = request.Click != 0 ? request.Click : existingProduct.Click;
+
+                if (request.Click != 0)
+                {
+                    existingProduct.Click = request.Click;
+                    existingProduct.ClickHistory.Add(new ClickEvent
+                    {
+                        Date = DateTime.UtcNow,
+                        ClickCount = request.Click
+                    });
+                }
+
                 existingProduct.CategoryId = request.CategoryId ?? existingProduct.CategoryId;
                 existingProduct.AdId = request.AdId ?? existingProduct.AdId;
+
                 await _repository.UpdateAsync(request.Id, existingProduct, cancellationToken);
 
                 return existingProduct;

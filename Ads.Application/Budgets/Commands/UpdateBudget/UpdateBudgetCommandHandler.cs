@@ -2,6 +2,8 @@
 using Ads.Application.Common.Interfaces;
 using Ads.Domain.Entities;
 using MediatR;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Ads.Application.Budgets.Commands.UpdateBudgetCommand
 {
@@ -16,28 +18,18 @@ namespace Ads.Application.Budgets.Commands.UpdateBudgetCommand
 
         public async Task<BudgetEntity> Handle(UpdateBudgetCommand request, CancellationToken cancellationToken)
         {
-            try
+            var existingBudget = await _repository.GetDetailsAsync(request.Id, cancellationToken);
+            if (existingBudget == null)
             {
-                var existingBudget = await _repository.GetDetailsAsync(request.Id, cancellationToken);
-                if (existingBudget == null)
-                {
-                    throw new BudgetNotFoundException($"Budget with id {request.Id} not found");
-                }
-                if (existingBudget.TotalBudget == 0)
-                    existingBudget.TotalBudget = existingBudget.TotalBudget;
-                else
-                    existingBudget.TotalBudget = request.TotalBudget;
-
-                existingBudget.Name = request.Name ?? existingBudget.Name; 
-
-                await _repository.UpdateAsync(request.Id , existingBudget, cancellationToken);
-
-                return existingBudget;
+                throw new BudgetNotFoundException($"Budget with id {request.Id} not found");
             }
-            catch (Exception ex)
-            {
-                throw new Exception($"Failed to update budget: {ex.Message}", ex);
-            }
+
+            existingBudget.Name = request.Name ?? existingBudget.Name;
+            existingBudget.TotalBudget = request.TotalBudget;
+
+            await _repository.UpdateAsync(request.Id, existingBudget, cancellationToken);
+
+            return existingBudget;
         }
     }
 }
