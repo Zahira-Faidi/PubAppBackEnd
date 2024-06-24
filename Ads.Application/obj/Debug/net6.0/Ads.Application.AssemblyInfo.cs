@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ads.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f893ed3f0027272cf9727ab50a3924315b7c8219")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+664b5fb1a7804c6cca863b4d42635230afcf7db9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ads.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ads.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

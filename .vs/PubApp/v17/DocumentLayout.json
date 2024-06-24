@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.domain\\entities\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|solutionrelative:ads.domain\\entities\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.domain\\entities\\categoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|solutionrelative:ads.domain\\entities\\categoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4359008-FF4B-4E4E-9536-E2F55525E575}|Ads.Application\\Ads.Application.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.application\\products\\commands\\updateproduct\\updateproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4359008-FF4B-4E4E-9536-E2F55525E575}|Ads.Application\\Ads.Application.csproj|solutionrelative:ads.application\\products\\commands\\updateproduct\\updateproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4359008-FF4B-4E4E-9536-E2F55525E575}|Ads.Application\\Ads.Application.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.application\\products\\commands\\updateproduct\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4359008-FF4B-4E4E-9536-E2F55525E575}|Ads.Application\\Ads.Application.csproj|solutionrelative:ads.application\\products\\commands\\updateproduct\\updateproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4359008-FF4B-4E4E-9536-E2F55525E575}|Ads.Application\\Ads.Application.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.application\\products\\commands\\updateproduct\\updateproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4359008-FF4B-4E4E-9536-E2F55525E575}|Ads.Application\\Ads.Application.csproj|solutionrelative:ads.application\\products\\commands\\updateproduct\\updateproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4359008-FF4B-4E4E-9536-E2F55525E575}|Ads.Application\\Ads.Application.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.application\\products\\commands\\createproduct\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4359008-FF4B-4E4E-9536-E2F55525E575}|Ads.Application\\Ads.Application.csproj|solutionrelative:ads.application\\products\\commands\\createproduct\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4359008-FF4B-4E4E-9536-E2F55525E575}|Ads.Application\\Ads.Application.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.application\\products\\commands\\createproduct\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4359008-FF4B-4E4E-9536-E2F55525E575}|Ads.Application\\Ads.Application.csproj|solutionrelative:ads.application\\products\\commands\\createproduct\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.domain\\entities\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|solutionrelative:ads.domain\\entities\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.domain\\entities\\budgetentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|solutionrelative:ads.domain\\entities\\budgetentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|c:\\users\\zahira.faidi\\onedrive - akkodis\\bureau\\pubappbackend\\pubapp\\ads.domain\\entities\\categoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7E5BAA-7C76-499D-8EC0-24FB4EE26928}|Ads.Domain\\Ads.Domain.csproj|solutionrelative:ads.domain\\entities\\categoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,21 +45,24 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateProductCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Products\\Commands\\UpdateProduct\\UpdateProductCommandHandler.cs",
-              "RelativeDocumentMoniker": "Ads.Application\\Products\\Commands\\UpdateProduct\\UpdateProductCommandHandler.cs",
-              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Products\\Commands\\UpdateProduct\\UpdateProductCommandHandler.cs",
-              "RelativeToolTip": "Ads.Application\\Products\\Commands\\UpdateProduct\\UpdateProductCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T14:29:25.24Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "CreateProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Products\\Commands\\CreateProduct\\CreateProductCommand.cs",
+              "RelativeDocumentMoniker": "Ads.Application\\Products\\Commands\\CreateProduct\\CreateProductCommand.cs",
+              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Products\\Commands\\CreateProduct\\CreateProductCommand.cs",
+              "RelativeToolTip": "Ads.Application\\Products\\Commands\\CreateProduct\\CreateProductCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T10:38:49.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UpdateProductCommand.cs",
               "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Products\\Commands\\UpdateProduct\\UpdateProductCommand.cs",
               "RelativeDocumentMoniker": "Ads.Application\\Products\\Commands\\UpdateProduct\\UpdateProductCommand.cs",
@@ -55,12 +70,48 @@
               "RelativeToolTip": "Ads.Application\\Products\\Commands\\UpdateProduct\\UpdateProductCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T14:29:22.496Z",
+              "WhenOpened": "2024-06-07T14:29:22.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UpdateProductCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Products\\Commands\\UpdateProduct\\UpdateProductCommandHandler.cs",
+              "RelativeDocumentMoniker": "Ads.Application\\Products\\Commands\\UpdateProduct\\UpdateProductCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Products\\Commands\\UpdateProduct\\UpdateProductCommandHandler.cs",
+              "RelativeToolTip": "Ads.Application\\Products\\Commands\\UpdateProduct\\UpdateProductCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T14:29:25.24Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "CreateProductCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Products\\Commands\\CreateProduct\\CreateProductCommandHandler.cs",
+              "RelativeDocumentMoniker": "Ads.Application\\Products\\Commands\\CreateProduct\\CreateProductCommandHandler.cs",
+              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Application\\Products\\Commands\\CreateProduct\\CreateProductCommandHandler.cs",
+              "RelativeToolTip": "Ads.Application\\Products\\Commands\\CreateProduct\\CreateProductCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T11:04:43.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BudgetEntity.cs",
+              "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\Entities\\BudgetEntity.cs",
+              "RelativeDocumentMoniker": "Ads.Domain\\Entities\\BudgetEntity.cs",
+              "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\Entities\\BudgetEntity.cs",
+              "RelativeToolTip": "Ads.Domain\\Entities\\BudgetEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T08:21:14.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CategoryEntity.cs",
               "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\Entities\\CategoryEntity.cs",
               "RelativeDocumentMoniker": "Ads.Domain\\Entities\\CategoryEntity.cs",
@@ -68,21 +119,19 @@
               "RelativeToolTip": "Ads.Domain\\Entities\\CategoryEntity.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T14:29:01.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T14:29:01.371Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ProductEntity.cs",
               "DocumentMoniker": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\Entities\\ProductEntity.cs",
               "RelativeDocumentMoniker": "Ads.Domain\\Entities\\ProductEntity.cs",
               "ToolTip": "C:\\Users\\ZAHIRA.FAIDI\\OneDrive - Akkodis\\Bureau\\PubAppBackEnd\\PubApp\\Ads.Domain\\Entities\\ProductEntity.cs",
               "RelativeToolTip": "Ads.Domain\\Entities\\ProductEntity.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAkwCQAAAAsAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAA/wCQAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T14:28:11.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-07T14:28:11.936Z"
             }
           ]
         }
