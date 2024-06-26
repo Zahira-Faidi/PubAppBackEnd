@@ -5,42 +5,68 @@ on:
     branches:
       - main
 
-
 jobs:
   build:
     name: Build and analyze
     runs-on: windows-latest
-    
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+
       - name: Set up JDK 17
-        uses: actions/setup-java@v1
+        uses: actions/setup-java@v3
         with:
-          java-version: 17
+          distribution: 'temurin'
+          java-version: '17'
+
       - name: Cache SonarQube packages
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         with:
-          path: ~\.sonar\cache
+          path: ~/.sonar/cache
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
+
       - name: Cache SonarQube scanner
         id: cache-sonar-scanner
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         with:
-          path: .\.sonar\scanner
+          path: ./.sonar/scanner
           key: ${{ runner.os }}-sonar-scanner
           restore-keys: ${{ runner.os }}-sonar-scanner
+
       - name: Install SonarQube scanner
         if: steps.cache-sonar-scanner.outputs.cache-hit != 'true'
-        shell: powershell
+        shell: pwsh
         run: |
-          New-Item -Path .\.sonar\scanner -ItemType Directory
-          dotnet tool update dotnet-sonarscanner --tool-path .\.sonar\scanner
-      - name: Build and analyze
-        shell: powershell
+          mkdir -p .\.sonar\scanner
+          dotnet tool install --tool-path .\.sonar\scanner dotnet-sonarscanner
+
+      - name: Test connectivity to SonarQube server
+        shell: pwsh
+        run: |
+          $url = "${{ secrets.SONAR_HOST_URL }}/api/server/version"
+          try {
+            $response = Invoke-WebRequest -Uri $url -UseBasicParsing
+            Write-Output "Successfully connected to SonarQube server. Response: $($response.Content)"
+          } catch {
+            Write-Error "Failed to connect to SonarQube server. Error: $_"
+            exit 1
+          }
+
+      - name: Begin SonarQube analysis
+        shell: pwsh
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"PubApp" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="${{ secrets.SONAR_HOST_URL }}"
+
+      - name: Build project
+        shell: pwsh
+        run: |
           dotnet build
+
+      - name: End SonarQube analysis
+        shell: pwsh
+        run: |
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
